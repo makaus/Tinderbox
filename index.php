@@ -11,8 +11,8 @@
   <body>
     
 
-    <h1>Hello World!</h1>
-    <h1>Hello World!!</h1>
+    <h1>Hello Tinderbox!</h1>
+  
 
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
