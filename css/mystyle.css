@@ -1,0 +1,190 @@
+/*===================================
+=            Basic Style            =
+===================================*/
+body {
+	color:#fff;
+}
+a {
+	color:#fff;
+}
+
+/*=====  End of Basic Style  ======*/
+
+
+/*================================================
+=            Main Style of Front-Page            =
+================================================*/
+/* Full width-height background */
+
+.background {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+.background img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+/* Language section */
+
+.language {
+	padding:60px 0 20px 0;
+}
+.language-dk {
+	padding-left:5px;
+}
+.language-eng {
+	padding-right:5px;
+}
+.logo {
+	margin-top:5px;
+}
+@media (max-width:768px) {
+	.language img {
+		width:20%;
+	}
+}
+/* FORM */
+.form {
+	margin-top:50px;
+}
+.input-group {
+	padding:10px 0;
+}
+.InputEmail , .InputPassword {
+	background:transparent;
+	border-radius:0px;
+	border:none;
+	border-bottom:1px solid #fff;
+	color:#fff;
+	padding-left:5px;
+}
+.button-submit {
+   background:transparent;
+   border:1px solid #fff;
+   border-radius:0px;
+   margin-top:10px;
+}
+.icons {
+	background:transparent;
+	border:none;
+	border-bottom:1px solid #fff;
+	border-radius:0px;
+	color:#bdc2c5;
+	padding:0 0 0 5px;
+}
+input {
+	padding:20px 0;
+}
+.button-checkbox {
+	display:block;
+	text-align:center;
+	width:100%;
+	margin-top:15px;
+}
+.btn-signed {
+	background:transparent;
+	border:none;
+	color:#fff;
+}
+.btn-signed-checked {
+	background:transparent;
+	border:1px solid #fff;
+	color:#fff;
+}
+.btn.focus, .btn:focus, .btn:hover {
+	color:#fff;
+}
+.forgot-password {
+	display:block;
+	width:100%;
+	text-align:center;
+	margin-top:5px;
+}
+/*==================================================
+=            Sign in with other options            =
+==================================================*/
+h3 {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+}
+
+h3 {
+  overflow: hidden;
+}
+h3 span {
+  position: relative;
+  display: inline-block;
+}
+
+h3 span:before, h3 span:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  margin-top: -1px;
+  width: 2000px;
+  height: 2px;
+  background-color: #fff;
+}
+
+h3 {
+  text-align: center;
+}
+h3 span {
+  padding: 0 10px;
+}
+h3 span:after {
+  left: 100%;
+}
+h3 span:before {
+  right: 100%;
+}
+.social-links {
+	margin-top:5px;
+}
+
+/*=====  End of Sign in with other options  ======*/
+
+/*===============================================
+=            Don't have account part            =
+===============================================*/
+
+.no-account {
+	margin-top:10px;
+	}
+.button-register {
+	margin-top:0;
+}
+/*=====  End of Don't have account part  ======*/
+
+
+
+/*=======================================
+=            Sign up section            =
+=======================================*/
+.form-sign-up {
+	margin-top:20px;
+}
+.new-account {
+	text-align:center;
+	padding-top:40px;
+	text-transform:uppercase;
+
+}
+.button-more-info {
+	margin-top:0;
+}
+.no-account-title {
+	margin-top:25px;
+}
+/*=====  End of Sign up section  ======*/
