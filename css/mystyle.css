@@ -1,8 +1,21 @@
 /*===================================
 =            Basic Style            =
 ===================================*/
+@font-face {
+    font-family: Brown;
+    src: url(../fonts/brown-regular.otf);
+}
+@font-face {
+	font-family:EvelethRegular;
+	src: url('../fonts/Yellow Design Studio - Eveleth Clean Regular.otf')
+}
+@font-face {
+	font-family:EvelethThin;
+	src: url('../fonts/Yellow Design Studio - Eveleth Clean Thin.otf');
+}
 body {
 	color:#fff;
+	font-family:"Brown";
 }
 a {
 	color:#fff;
