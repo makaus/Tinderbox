@@ -45,7 +45,7 @@
 						<div class="info">
 							<div class="time">2 minutes ago</div>
 							<div class="person">SUPERVISOR</div>
-							<div class="text"><p>Hello guys, Lara and Jonna will not come today because they are sick.<br />Hope things will work without them.</p></div>
+							<div class="text-message"><p>Hello guys, Lara and Jonna will not come today because they are sick.<br />Hope things will work without them.</p></div>
 						</div>
 					</div>
 
@@ -56,7 +56,7 @@
 						<div class="info">
 							<div class="time">10 minutes ago</div>
 							<div class="person">SUPERVISOR</div>
-							<div class="text"><p>Guys, don't forget your lunch.<br />Between 12:00 and 15:00.</p></div>
+							<div class="text-message"><p>Guys, don't forget your lunch.<br />Between 12:00 and 15:00.</p></div>
 						</div>
 					</div>
 					
