@@ -22,6 +22,13 @@ a {
 	color:#fff;
 }
 
+a:focus,
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+
 /*=====  End of Basic Style  ======*/
 
 
@@ -237,12 +244,12 @@ h3 span:before {
 #schedule-t {
 	text-align: center;
 	color:#e7eded;
-	font-size:20px;
+	font-size:17px;
 	margin:12px 0;
 }
 .glyphicon-home {
 	color:#2a4f57;
-	font-size:22px;
+	font-size:20px;
 	padding-top:12px;
 }
 
@@ -516,7 +523,7 @@ h3 span:before {
 }
 li.list-group-item.date {
 	background:transparent;
-	border-bottom:1px solid #4b6b71;
+	border-bottom:1px solid #b2c4c8;
 	border:none;
 	font-family:'Brown';
 }
@@ -653,3 +660,108 @@ span.text-right-span {
 		font-size: 15px;
 	}
 }
+
+/*=========================================
+=            Info/Contact part            =
+=========================================*/
+.accordion {
+	margin-top:25px;
+}
+div[class*='col-'] {
+  padding: 0 30px;
+}
+
+.panel {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #b2c4c8;
+  background: none;
+  box-shadow: none;
+}
+.panel-body p {
+	color:#e7eded;
+	font-family:'Brown';
+	font-size:13px;
+
+}
+.panel:last-child {
+  border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+  border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+.panel-heading {
+  background-color: #e7eded;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  padding: 0;
+}
+
+.panel-title a {
+  display: block;
+  color: #053541;
+  padding: 15px;
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.panel-body {
+  background: #f18879;
+}
+
+.panel:last-child .panel-body {
+  border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+  border-radius: 0 0 4px 4px;
+  -webkit-transition: border-radius 0.3s linear 0.2s;
+  transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+  border-radius: 0;
+  -webkit-transition: border-radius linear 0s;
+  transition: border-radius linear 0s;
+}
+
+#accordion .panel-heading a:before {
+  content: '\e113';
+  font-size: 13px;
+  position: absolute;
+  font-family: 'Glyphicons Halflings';
+  right: 15px;
+  top: 15px;
+  color:#b2c4c8;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#accordion .panel-heading a:hover:before {
+  content: '\e113';
+  font-size: 13px;
+  position: absolute;
+  font-family: 'Glyphicons Halflings';
+  right: 15px;
+  top: 15px;
+  color:#b2c4c8;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/*=====  End of Info/Contact part  ======*/
