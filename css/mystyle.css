@@ -666,10 +666,6 @@ span.text-right-span {
 .accordion {
 	margin-top:25px;
 }
-div[class*='col-'] {
-  padding: 0 30px;
-}
-
 .panel {
   border-width: 0 0 1px 0;
   border-style: solid;
