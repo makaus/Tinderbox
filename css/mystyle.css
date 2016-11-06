@@ -817,15 +817,7 @@ span.text-right-span {
 
 /* Settings part */
 
-body
-{
-	margin:  0;
-	padding:  0;
-	background-image: url('../img/background.png');
-	background-attachment: fixed;
-	background-size: cover;
-	color:  #ffffff;
-}
+
 
 /*SETTINGS*/
 
