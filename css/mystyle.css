@@ -482,16 +482,11 @@ h3 span:before {
 }
 
 .custom-content-reveal {
-	-moz-transition: all 0.6s ease-in-out;
-	-ms-transition: all 0.6s ease-in-out;
-	-o-transition: all 0.6s ease-in-out;
-	-webkit-transition: all 0.6s ease-in-out;
 	background:transparent;
 	bottom:0;
 	height: 100%;
 	position:relative;
 	text-align: center;
-	transition: all 0.6s ease-in-out;
 	width: 100%;
 	z-index: 100;
 }
@@ -524,8 +519,13 @@ h3 span:before {
 li.list-group-item.date {
 	background:transparent;
 	border-bottom:1px solid #b2c4c8;
-	border:none;
+	border-top:none;
+	border-right:none;
+	border-left:none;
 	font-family:'Brown';
+}
+.list-group-item:last-child {
+	border-radius:0;
 }
 span#container-date {
 	display:flex;
@@ -626,12 +626,11 @@ span.text-right-span {
 	color: #053541;
 	content: '\00B7';
 	font-size: 70px;
-	left: 50%;
+	left: 30%;
 	line-height: 20px;
-	margin-left: -10px;
 	position: absolute;
 	text-align: center;
-	width: 20px;
+	width: 100%;
 }
 
 .fc-calendar .fc-row > div.fc-today.fc-content:after {

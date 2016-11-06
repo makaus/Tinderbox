@@ -118,7 +118,7 @@ $(function () {
                     $events.append( contentEl.join('') , $close ).insertAfter( $wrapper );
                     
                     setTimeout( function() {
-                        $events.css( 'top', '0%' );
+                        $events.css( 'position', 'relative' );
                     }, 25 );
 
                 }
@@ -127,7 +127,7 @@ $(function () {
                     var $events = $( '#custom-content-reveal' );
                     if( $events.length > 0 ) {
                         
-                        $events.css( 'top', '100%' );
+                        $events.css( 'display', 'none' );
                         Modernizr.csstransitions ? $events.on( transEndEventName, function() { $( this ).remove(); } ) : $events.remove();
 
                     }
