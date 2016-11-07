@@ -912,3 +912,247 @@ span.text-right-span {
 }
 
 /* End of settings part */
+
+
+/*=======================================
+=            Dashboard        		    =
+=======================================*/
+
+/* Background colors for dashboard*/
+
+.background-color {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+
+.dashboard-container {
+	position: relative;
+    margin-top: -100px;
+    z-index: 3;
+}
+
+.first-color {
+	margin-top:  -400px;
+	margin-left:  -200px;
+	width: 1000px;
+    height: 500px;
+    background-color: #053541;
+    position: relative;
+    overflow: hidden;
+    /* Rotate div */
+    -ms-transform: rotate(-24deg); /* IE 9 */
+    -webkit-transform: rotate(-24deg); /* Chrome, Safari, Opera */
+    transform: rotate(-24deg);
+    z-index: 2;
+}
+
+.second-color {
+	margin-top: -100px;
+	width: 100%;
+	height: 10000px;
+	position: absolute;
+    background-color: #8bc7b9;
+}
+
+/* User profile */
+
+.user-profile {
+	float: none;
+}
+
+.user-profile h3, p {
+	text-transform: none;
+	font-family: Brown;
+	margin: 0;
+}
+
+.user-profile h3 {
+	margin: 25px auto 5px auto;
+}
+
+.user-profile p {
+	margin-bottom: 5px;
+}
+
+.user-profile .profile-image {
+	border-radius: 50%;
+	border: 10px solid #f18879;
+	height: 150px;
+	margin: 0 auto 15px auto;
+}
+
+.user-profile .profile-edit {
+	width: 15px;
+	margin: 0 auto 7px auto;
+}
+
+.settings {
+	position: absolute;
+	right: 10%;
+	top: 150px;
+}
+
+.settings img {
+	width: 20px;
+}
+
+.breaker {
+	top: 10px;
+	width: 50%;
+	height: 1px;
+	background-color: #053541;
+	margin: 0 auto;
+	position: relative;
+}
+
+.fat-breaker {
+	height: 3px;
+	background-color: #053541;
+	width: 50%;
+	margin: 0 auto;
+	position: absolute;
+	top: -1px;
+	left: 25%;
+}
+
+/* Dashboard tiles */
+
+.dashboard-tile-wrapper {
+	width: 90%;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.dashboard-tile-container {
+	background-color: #b5dbd2;
+	padding: 0;
+}
+
+.dashboard-tile {
+	height: 132px;
+	border-right: 1px solid rgba(93, 136, 137, 0.5);
+	border-bottom: 1px solid rgba(93, 136, 137, 0.5);
+}
+
+.dashboard-tile:last-of-type {
+	border-bottom: 0;
+}
+
+.dashboard-tile-container:last-of-type .dashboard-tile {
+	border-right: 0;
+}
+
+.dashboard-tile img {
+	width: 30%;
+	margin: 0 auto;
+	padding: 30px 0 5px 0;
+}
+
+.dashboard-tile h2 {
+	font-family: Brown;
+	font-size: 16px;
+	text-align: center;
+	color: #053541;
+	margin: 0;
+	padding-bottom: 30px;
+}
+
+/* Logout button */
+
+.dashboard-container .btn {
+	margin: 0 auto 20px auto;
+}
+
+/*=====  End of Dashboard section  ======*/
+
+
+/*=======================================
+=            My team        		    =
+=======================================*/
+
+/* My team menu */
+
+.table {
+	display: table;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table .cell {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu-container {
+	margin: 20px 0 0 0;
+	border-top: 1px solid rgba(93, 136, 137, 0.5);
+	padding: 0;
+}
+
+.menu {
+	height: 40px;
+}
+
+.menu .col-xs-8 {
+	border-bottom: 1px solid rgba(93, 136, 137, 0.5);
+	padding: 0;
+	height: inherit;
+}
+
+.menu .col-xs-2 {
+	padding: 0;
+	height: inherit;
+}
+
+.menu img {
+	width: 30%;
+}
+
+.menu h1 {
+	text-transform: uppercase;
+	font-size: 16px;
+	margin: 0;
+	padding: 10px 0;
+}
+
+/* My team members */
+
+.myteam {
+
+}
+
+.myteam .row .col-xs-4 {
+	margin-top: 10px;
+}
+
+.team-member {
+	height: 100px;
+	margin: 20px 0;
+}
+
+.team-member h2 {
+	text-align: center;
+	font-size: 12px;
+	font-family: Brown;
+	margin: 10px 0 5px 0;
+}
+
+.team-member h3 {
+	margin: 0;
+	text-align: center;
+	font-size: 10px;
+	font-family: Brown;
+	text-transform: none;
+}
+
+.team-member img {
+	width: 60%;
+	border-radius: 50%;
+}
+
+/*=====  End of Dashboard section  ======*/
