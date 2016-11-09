@@ -28,7 +28,9 @@ a:active {
   outline: 0;
   text-decoration: none;
 }
-
+input {
+	font-family: 'Brown';
+}
 /*=====  End of Basic Style  ======*/
 
 
@@ -95,9 +97,17 @@ a:active {
    border-radius:0px;
    margin-top:10px;
 }
-.button-submit:active {
-	background:transparent;
-	
+.button-submit:hover {
+	background: transparent;
+	border: 1px solid gray;
+}
+.btn-primary:active {
+	background: #013f4c;
+	border: 1px solid #fff;
+}
+.btn-primary.focus, .btn-primary:focus {
+	background: #013f4c;
+	border: 1px solid #fff;
 }
 
 .icons {

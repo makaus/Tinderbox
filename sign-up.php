@@ -40,19 +40,19 @@
             <form action="" method="POST" role="form">
                <div class="input-group">
                  <span class="input-group-addon icons"><span class="glyphicon glyphicon-user"></span></span>
-                  <input type="name" class="form-control InputEmail" placeholder="Name">
+                  <input type="name" class="form-control InputEmail" placeholder="NAME">
                 </div>
                 <div class="input-group">
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-lock"></span></span>
-                  <input type="password" class="form-control InputPassword" placeholder="Password">
+                  <input type="password" class="form-control InputPassword" placeholder="PASSWORD">
                 </div>
                 <div class="input-group">
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-lock"></span></span>
-                  <input type="password" class="form-control InputPassword" placeholder="Repeat Password">
+                  <input type="password" class="form-control InputPassword" placeholder="REPEAT PASSWORD">
                 </div>
                 <div class="input-group">
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-envelope"></span></span>
-                  <input type="email" class="form-control InputPassword" placeholder="Email">
+                  <input type="email" class="form-control InputPassword" placeholder="EMAIL">
                 </div>
                 <button type="submit" class="btn btn-primary btn-block button-submit">Register</button>
             </form>
