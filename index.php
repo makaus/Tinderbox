@@ -37,11 +37,11 @@
             <form action="" method="POST" role="form">
                <div class="input-group">
                  <span class="input-group-addon icons"><span class="glyphicon glyphicon-user"></span></span>
-                  <input type="email" class="form-control InputEmail" placeholder="Username">
+                  <input type="email" class="form-control InputEmail" placeholder="USERNAME">
                 </div>
                 <div class="input-group">
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-lock"></span></span>
-                  <input type="password" class="form-control InputPassword" placeholder="Password">
+                  <input type="password" class="form-control InputPassword" placeholder="PASSWORD">
                 </div>
 
                 <button type="submit" class="btn btn-primary btn-block button-submit">Login</button>
