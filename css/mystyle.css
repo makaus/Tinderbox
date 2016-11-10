@@ -13,11 +13,22 @@
 	font-family:EvelethThin;
 	src: url('../fonts/Yellow Design Studio - Eveleth Clean Thin.otf');
 }
+
+/************************    ****************************/
+/*ADDED html, bordy STYLE SPESIFIC FOR MAP*/
+html, body {
+	height: 100%;
+        margin: 0;
+        padding: 0;
+}
+/************************    ****************************/
+
 body {
 	color:#fff;
 	font-family:"EvelethThin";
 	font-size:1em;
 }
+
 a {
 	color:#fff;
 }
@@ -1156,3 +1167,46 @@ span.text-right-span {
 }
 
 /*=====  End of Dashboard section  ======*/
+
+/*=======================================
+=            My ticket        		    =
+=======================================*/
+
+.ticket-wrap {
+	position: relative;
+	background: #8bc7b9;
+	width: 100%;
+	border-radius: 4px;
+	padding: 1%;
+	margin-top: 10%;
+}
+.ticket-wrap .ticket-text{
+	margin-top:15%;
+	margin: 0 auto;
+}
+
+.ticket-text, #schedule-t {
+	line-height: 1.7;
+
+}
+
+.ticket {
+
+	height: 70%;
+	margin: 0 auto;
+	position: relative;
+	top: 40%;
+}
+
+.ticket img {
+	width: 100%;
+}
+
+/*=====  End of My Ticket  ======*/
+
+/*=======================================
+=            Map        		    =
+=======================================*/
+#map {
+        height: 89vh;
+      }

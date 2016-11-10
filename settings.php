@@ -10,7 +10,7 @@
 <body>
 	<div class="background">
     	<img src="img/background-schedule.png" alt="background-sign-in">
-  	</div></div>
+  	</div>
 
   <div class="container-fluid ">
       <div class="row">
