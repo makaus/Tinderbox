@@ -37,7 +37,7 @@
             <form action="" method="POST" role="form">
                <div class="input-group">
                  <span class="input-group-addon icons"><span class="glyphicon glyphicon-user"></span></span>
-                  <input type="email" class="form-control InputEmail" placeholder="USERNAME">
+                  <input type="email" class="form-control InputEmail" placeholder="EMAIL">
                 </div>
                 <div class="input-group">
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-lock"></span></span>

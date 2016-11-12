@@ -98,13 +98,13 @@ input {
 	background:transparent;
 	border-radius:0px;
 	border:none;
-	border-bottom:1px solid #fff;
+	border-bottom:1px solid #e7eded;
 	color:#fff;
 	padding-left:5px;
 }
 .button-submit {
    background:transparent;
-   border:1px solid #fff;
+   border:1px solid #e7eded;
    border-radius:0px;
    margin-top:10px;
 }
@@ -114,17 +114,17 @@ input {
 }
 .btn-primary:active {
 	background: #013f4c;
-	border: 1px solid #fff;
+	border: 1px solid #e7eded;
 }
 .btn-primary.focus, .btn-primary:focus {
 	background: #013f4c;
-	border: 1px solid #fff;
+	border: 1px solid #e7eded;
 }
 
 .icons {
 	background:transparent;
 	border:none;
-	border-bottom:1px solid #fff;
+	border-bottom:1px solid #e7eded;
 	border-radius:0px;
 	color:#bdc2c5;
 	padding:0 0 0 5px;
@@ -219,9 +219,14 @@ h3 span:before {
 	font-size:1.5em;
 }
 .button-register {
-	margin-top:0;
+	margin-bottom: 15px;
+	line-height: 25px;
 }
-
+.btn {
+	padding: 0;
+	height: 30px;
+	line-height: 32px;
+}
 /*=====  End of Don't have account part  ======*/
 
 
@@ -238,11 +243,27 @@ h3 span:before {
 	text-transform:uppercase;
 
 }
+select.form-control {
+	background: transparent;
+	color: #bdc2c5;
+	margin: 15px 0;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #e7eded;
+	border-radius: 0;
+}
+
+
+
 .button-more-info {
 	margin-top:0;
+	margin-bottom: 15px;
 }
 .no-account-title {
 	margin-top:25px;
+	font-family: 'Brown';
+	font-size: 13px;
 }
 /*=====  End of Sign up section  ======*/
 
@@ -975,6 +996,11 @@ span.text-right-span {
 	height: 10000px;
 	position: absolute;
     background-color: #8bc7b9;
+}
+.button-dashboard {
+	background: transparent;
+	border: 1px solid #053541;
+	color: #053541;
 }
 
 /* User profile */

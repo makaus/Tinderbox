@@ -24,7 +24,8 @@
           <div class="col-xs-6 language language-dk">
             <a  href=""><img class="img-responsive pull-left" src="../Tinderbox//img/d-flag.png" alt="danish-flag"></a>
           </div> <!-- End of Languages -->
-
+      </div>
+      <div class="row">
           <!--LOGO -->
           <div class="col-xs-offset-1 col-xs-10">
               <div class="logo">
@@ -54,6 +55,23 @@
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-envelope"></span></span>
                   <input type="email" class="form-control InputPassword" placeholder="EMAIL">
                 </div>
+                <div class="input-group">
+                  <span class="input-group-addon icons"><span class="glyphicon glyphicon-phone"></span></span>
+                  <input type="tel" class="form-control InputPassword" placeholder="PHONE NUMBER">
+                </div>
+                <select class="form-control">
+                  <option>Choose Department</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                </select>
+                <select class="form-control">
+                  <option>Choose period</option>
+                  <option>Before the Festival</option>
+                  <option>During the Festival </option>
+                  <option>After the Festival</option>
+                </select>
+
                 <button type="submit" class="btn btn-primary btn-block button-submit">Register</button>
             </form>
           </div> <!-- End of Form -->

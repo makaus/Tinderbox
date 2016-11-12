@@ -58,7 +58,7 @@
 					</div>
 				</div>
 				<div class="col-xs-12">
-					<button type="submit" class="btn btn-primary btn-block button-submit">Log out</button>
+					<button type="submit" class="btn btn-primary btn-block button-dashboard">Log out</button>
 				</div>
 				
 			</div>
