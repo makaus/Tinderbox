@@ -10,16 +10,16 @@
   </head>
 <body>
 	<div class="background">
-    	<img src="<?php echo base_url(); ?>public/img/background-schedule.png" alt="background-sign-in">
+    	<img src="<?php echo base_url(); ?>public/img/background-schedule.png" alt="background-settings">
   	</div>
 
-  <div class="container-fluid ">
-      <div class="row">
-     	<div class="col-xs-12 hr-container">
-         	<hr id="first-hr">
-    	</div></div>
-      </div> <!-- END OF THE ROW -->
-  </div> <!-- END OF THE CONTAINER-FLUID -->
+	 <div class="container-fluid ">
+	      <div class="row">
+	     	<div class="col-xs-12 hr-container">
+	         	<hr class="first-hr">
+	    	</div>
+	      </div> <!-- END OF THE ROW -->
+	  </div> <!-- END OF THE CONTAINER-FLUID -->
 
   
   <div class="container schedule-title">
@@ -27,11 +27,11 @@
   		<div class="col-xs-2">
   			<a href="dashboard.php"><span class="glyphicon glyphicon-home"></span></a>
   		</div>
-  		<div class="col-xs-9">
-  			<h2 id="schedule-t">SETTINGS</h2>
+  		<div class="col-xs-8">
+  			<h2 class="title-page">SETTINGS</h2>
   		</div>
   		<div class="col-xs-offset-1 col-xs-10">
-  			<hr id="second-hr">
+  			<hr class="second-hr">
   		</div>
   	</div>
   </div>

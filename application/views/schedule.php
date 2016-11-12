@@ -13,29 +13,29 @@
 <body>
   <!-- Full width - height background -->
   <div class="background">
-    <img src="<?php echo base_url(); ?>public/img/background-schedule.png" alt="background-sign-in">
+    <img src="<?php echo base_url(); ?>public/img/background-schedule.png" alt="background-schedule">
   </div>
 
   <div class="container-fluid ">
       <div class="row">
          <div class="col-xs-12 hr-container">
-         	<hr id="first-hr">
-        
+            <hr class="first-hr">
+          </div>
       </div> <!-- END OF THE ROW -->
   </div> <!-- END OF THE CONTAINER-FLUID -->
 
   
   <div class="container schedule-title">
   	<div class="row">
-  		<div class="col-xs-2">
-  			<a href="dashboard.php"><span class="glyphicon glyphicon-home"></span></a>
-  		</div>
-  		<div class="col-xs-9">
-  			<h2 id="schedule-t">Schedule</h2>
-  		</div>
-  		<div class="col-xs-offset-1 col-xs-10">
-  			<hr id="second-hr">
-  		</div>
+    		<div class="col-xs-2">
+    			<a href="dashboard.php"><span class="glyphicon glyphicon-home"></span></a>
+    		</div>
+    		<div class="col-xs-8">
+    			<h2 class="title-page">Schedule</h2>
+    		</div>
+    		<div class="col-xs-offset-1 col-xs-10">
+    			<hr class="second-hr">
+    		</div>
   	</div>
   </div>
   <div class="container">

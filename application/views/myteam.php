@@ -11,7 +11,7 @@
 </head>
 <body>
 	<div class="background">
-    	<img src="<?php echo base_url(); ?>public/img/background-schedule.png" alt="background-sign-in">
+    	<img src="<?php echo base_url(); ?>public/img/background-schedule.png" alt="background-myteam">
   	</div></div>
 	<div class="container myteam">
 		<div class="row">

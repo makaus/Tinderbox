@@ -12,7 +12,7 @@
 <body>
   <!-- Full width - height background -->
   <div class="background">
-    <img src="<?php echo base_url(); ?>public/img/background-schedule.png" alt="background-sign-in">
+    <img src="<?php echo base_url(); ?>public/img/bg-sign-in.png" alt="background-sign-up">
   </div>
 
   <div class="container">

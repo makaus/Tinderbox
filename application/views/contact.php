@@ -12,29 +12,29 @@
 <body>
   <!-- Full width - height background -->
   <div class="background">
-    <img src="<?php echo base_url(); ?>public/img/bg-sign-in.png" alt="background-sign-in">
+    <img src="<?php echo base_url(); ?>public/img/background-schedule.png" alt="background-contact">
   </div>
 
   <div class="container-fluid ">
       <div class="row">
          <div class="col-xs-12 hr-container">
-         	<hr id="first-hr">
-        
-      </div> <!-- END OF THE ROW -->
-  </div> <!-- END OF THE CONTAINER-FLUID -->
+            <hr class="first-hr">
+          </div> <!-- END OF THE ROW -->
+      </div> <!-- END OF THE CONTAINER-FLUID -->
+  </div>
 
   
   <div class="container schedule-title">
   	<div class="row">
-  		<div class="col-xs-2">
-  			<a href="dashboard.php"><span class="glyphicon glyphicon-home"></span></a>
-  		</div>
-  		<div class="col-xs-9">
-  			<h2 id="schedule-t">Info/Contact</h2>
-  		</div>
-  		<div class="col-xs-offset-1 col-xs-10">
-  			<hr id="second-hr">
-  		</div>
+    		<div class="col-xs-2">
+    			<a href="dashboard.php"><span class="glyphicon glyphicon-home"></span></a>
+    		</div>
+    		<div class="col-xs-8">
+    			<h2 class="title-page">Info/Contact</h2>
+    		</div>
+    		<div class="col-xs-offset-1 col-xs-10">
+    			<hr class="second-hr">
+    		</div>
   	</div>
   </div>
   <!-- Accordion part -->

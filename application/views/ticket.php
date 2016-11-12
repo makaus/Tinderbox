@@ -9,32 +9,32 @@
   </head>
 	<body>
 	<div class="background">
-    	<img src="img/background-schedule.png" alt="background-sign-in">
+    	<img src="img/background-schedule.png" alt="background-ticket">
   	</div>
 	 <div class="container-fluid">
 	      <div class="row">
 	     		<div class="col-xs-12 hr-container">
-	         		<hr id="first-hr">
+	         		<hr class="first-hr">
 	    		</div>
-	    	</div>
 	      </div> <!-- END OF THE ROW -->
 	 </div> <!-- END OF THE CONTAINER-FLUID -->
+
 	 <div class="container schedule-title">
 	  	<div class="row">
 	  		<div class="col-xs-2">
 	  			<a href="dashboard.php"><span class="glyphicon glyphicon-home"></span></a>
 	  		</div>
-	  		<div class="col-xs-9">
-	  			<h2 id="schedule-t">My ticket</h2>
+	  		<div class="col-xs-8">
+	  			<h2 class="title-page">My ticket</h2>
 	  		</div>
 	  		<div class="col-xs-offset-1 col-xs-10">
-	  			<hr id="second-hr">
+	  			<hr class="second-hr">
 	  		</div>
 	  	</div>
 	 </div>
 
 		 <!-- Container for main content -->
-		 <div class="container">
+	<div class="container">
 		  	<div class="row">
 		  		<div class="col-xs-12">
 		  		<!-- Content goes bellow -->
@@ -42,16 +42,14 @@
 		  				<div class="ticket">
 		  					<img src="img/My_PDF_Code.png" alt="Ticket">
 				<!-- Content goes above -->
-					
-					</div> 
+						</div> 
 				<!-- End of ticket -->	
-				
-		  		</div> <!-- End of ticket wrap-->
-		  		<div class="col-xs-12 ticket-text">
-	  			<h2 id="schedule-t">Let's Download <br> your Ticket!</h2>
-	  		</div>
-			</div>	<!-- End of ticket xs-col-->	
-		</div> <!--End of row  -->
+		  			</div> <!-- End of ticket wrap-->
+			  		<div class="col-xs-12 ticket-text">
+		  				<h2 id="schedule-t">Let's Download <br> your Ticket!</h2>
+		  			</div>
+				</div>	<!-- End of ticket xs-col-->	
+			</div> <!--End of row  -->
 	</div> <!-- End of ticket container-->	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
