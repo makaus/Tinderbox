@@ -25,7 +25,7 @@
 					</div>
 				</div>
 				<a href="settings.php"><div class="settings">
-					<img src="img/settings.png" alt="Settings">
+					<img src="<?php echo base_url(); ?>public/img/settings.png" alt="Settings">
 				</div></a>
 				<div class="dashboard-tile-wrapper">
 					<div class="col-xs-6 dashboard-tile-container">
@@ -33,14 +33,14 @@
 							<img src="<?php echo base_url(); ?>public/img/team.png" alt="Team" class="img-responsive center-block">
 							<h2>My team</h2>
 						</div></a>
-						<div class="dashboard-tile">
+						<a href=""><div class="dashboard-tile">
 							<img src="<?php echo base_url(); ?>public/img/map.png" alt="Map" class="img-responsive center-block">
 							<h2>Map</h2>
-						</div>
-						<div class="dashboard-tile">
+						</div></a>
+						<a href=""><div class="dashboard-tile">
 							<img src="<?php echo base_url(); ?>public/img/ticket.png" alt="Ticket" class="img-responsive center-block">
 							<h2>My ticket</h2>
-						</div>
+						</div></a>
 					</div>
 					<div class="col-xs-6 dashboard-tile-container">
 						<a href="schedule.php"><div class="dashboard-tile">

@@ -1100,7 +1100,7 @@ span.text-right-span {
 	border-bottom: 1px solid rgba(93, 136, 137, 0.5);
 }
 
-.dashboard-tile:last-of-type {
+a:last-of-type .dashboard-tile {
 	border-bottom: 0;
 }
 
@@ -1263,3 +1263,6 @@ span.text-right-span {
 #map {
         height: 89vh;
       }
+
+
+
