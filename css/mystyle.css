@@ -261,6 +261,10 @@ h3 span:before {
 }
 .schedule-title {
 	padding:0 30px;
+	background: #053541;
+}
+.schedule-title {
+	
 }
 #schedule-t {
 	text-align: center;

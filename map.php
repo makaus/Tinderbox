@@ -10,9 +10,9 @@
   </head>
 
   <body class="map-body">
-  <div class="background">
+ <!--  <div class="background">
       <img src="img/background-schedule.png" alt="background-sign-in">
-    </div>
+    </div> -->
 
        <div class="container schedule-title">
         <div class="row">
@@ -40,19 +40,11 @@
     <li><a href="#">Separated link</a></li>
   </ul>
 </div> -->
-    <div id="map"></div>
-    <script>
-      var map;
-      function initMap() {
-        map = new google.maps.Map(document.getElementById('map'), {
-          center: {lat: -34.397, lng: 150.644},
-          zoom: 8
-        });
-      }
-
-      // $('.dropdown-toggle').dropdown()
-    </script>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANyDphZ75eS8XeiYgLTDSFQwT2-bpk-Ss&callback=initMap"
-    async defer></script>
+    <div id="tb-map">
+      <iframe src="https://www.google.com/maps/d/embed?mid=19LLUAOUsJY40jp_JCjU6wldOFWo&hl=en" width="640" height="480"></iframe>
+    </div>
+    
+    <!-- <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyANyDphZ75eS8XeiYgLTDSFQwT2-bpk-Ss&callback=initMap"
+    async defer></script> -->
   </body>
 </html>

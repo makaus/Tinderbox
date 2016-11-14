@@ -40,7 +40,7 @@
 		  		<!-- Content goes bellow -->
 		  			<div class="ticket-wrap">
 		  				<div class="ticket">
-		  					<img src="img/My_PDF_Code.png" alt="Ticket">
+		  					<img src="qrcode.php?text=http://www.eal.dk&size=200&padding=10" alt="Ticket">
 				<!-- Content goes above -->
 					
 					</div> 
@@ -48,7 +48,7 @@
 				
 		  		</div> <!-- End of ticket wrap-->
 		  		<div class="col-xs-12 ticket-text">
-	  			<h2 id="schedule-t">Let's Download <br> your Ticket!</h2>
+	  			<h2 id="schedule-t">Your Ticket!</h2>
 	  		</div>
 			</div>	<!-- End of ticket xs-col-->	
 		</div> <!--End of row  -->

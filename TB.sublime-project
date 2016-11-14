@@ -3,6 +3,15 @@
 	[
 		{
 			"path": "."
+		},
+		{
+			"path": "/Users/Joi/Sites/mamp/tb-gab/qrCode"
+		},
+		{
+			"path": "/Users/Joi/Sites/mamp/tb-gab/qrReader"
+		},
+		{
+			"path": "/Users/Joi/Sites/mamp/tb-gab"
 		}
 	]
 }
