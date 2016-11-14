@@ -35,12 +35,9 @@
         </div>
     </div>
   </div>
-  
-  <div class="container-fluid" style="padding:0;">
-    <div class="col-xs-12">
-        <iframe src="https://www.google.com/maps/d/embed?mid=19LLUAOUsJY40jp_JCjU6wldOFWo" width="100%" height="500px"></iframe>
+    <div id="tb-map">
+      <iframe src="https://www.google.com/maps/d/embed?mid=19LLUAOUsJY40jp_JCjU6wldOFWo" width="640" height="480"></iframe>
     </div>
-  </div>
  
   </body> 
 </html>
