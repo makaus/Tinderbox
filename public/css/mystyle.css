@@ -1,0 +1,1272 @@
+/*===================================
+=            Basic Style            =
+===================================*/
+@font-face {
+    font-family: Brown;
+    src: url('<?php echo base_url(); ?>public/fonts/brown-regular.otf');
+}
+@font-face {
+	font-family:EvelethRegular;
+	src: url('<?php echo base_url(); ?>public/fonts/Yellow Design Studio - Eveleth Clean Regular.otf');
+}
+@font-face {
+	font-family:EvelethThin;
+	src: url('<?php echo base_url(); ?>public/fonts/Yellow Design Studio - Eveleth Clean Thin.otf');
+}
+
+/************************    ****************************/
+/*ADDED html, bordy STYLE SPESIFIC FOR MAP*/
+html, body {
+	height: 100%;
+        margin: 0;
+        padding: 0;
+}
+/************************    ****************************/
+
+body {
+	color:#fff;
+	font-family:"EvelethThin";
+	font-size:1em;
+}
+
+a {
+	color:#fff;
+}
+
+a:focus,
+a:hover,
+a:active {
+  outline: 0;
+  text-decoration: none;
+}
+input {
+	font-family: 'Brown';
+}
+/*=====  End of Basic Style  ======*/
+
+
+/*================================================
+=            Main Style of Front-Page            =
+================================================*/
+/* Full width-height background */
+
+.background {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+.background img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+}
+
+/* Language section */
+
+.language {
+	padding:60px 0 20px 0;
+}
+.language-dk {
+	padding-left:5px;
+}
+.language-eng {
+	padding-right:5px;
+}
+.logo {
+	margin-top:5px;
+}
+@media (max-width:768px) {
+	.language img {
+		width:20%;
+	}
+}
+/* FORM */
+.form {
+	margin-top:50px;
+}
+.input-group {
+	padding:10px 0;
+}
+.InputEmail , .InputPassword {
+	background:transparent;
+	border-radius:0px;
+	border:none;
+	border-bottom:1px solid #e7eded;
+	color:#e7eded;
+	padding-left:5px;
+}
+input::-webkit-input-placeholder {
+color: #e7eded !important;
+}
+ 
+input:-moz-placeholder { /* Firefox 18- */
+color: #e7eded !important;  
+}
+ 
+input::-moz-placeholder {  /* Firefox 19+ */
+color: #e7eded !important;  
+}
+ 
+input:-ms-input-placeholder {  
+color: #e7eded !important;  
+}
+
+.button-submit {
+   background:transparent;
+   border:1px solid #e7eded;
+   border-radius:0px;
+   margin-top:10px;
+}
+.button-submit:hover {
+	background: transparent;
+	border: 1px solid gray;
+}
+.btn-primary:active {
+	background: #013f4c;
+	border: 1px solid #e7eded;
+}
+.btn-primary.focus, .btn-primary:focus {
+	background: #013f4c;
+	border: 1px solid #e7eded;
+}
+
+.icons {
+	background:transparent;
+	border:none;
+	border-bottom:1px solid #e7eded;
+	border-radius:0px;
+	color:#e7eded;
+	padding:0 0 0 5px;
+}
+input {
+	padding:20px 0;
+}
+.button-checkbox {
+	display:block;
+	text-align:center;
+	width:100%;
+	margin-top:15px;
+	font-family:'Brown';
+}
+.btn-signed {
+	background:transparent;
+	border:none;
+	color:#fff;
+
+}
+.btn-signed-checked {
+	background:transparent;
+	border:1px solid #fff;
+	color:#fff;
+}
+.btn.focus, .btn:focus, .btn:hover {
+	color:#fff;
+}
+.forgot-password {
+	display:block;
+	width:100%;
+	text-align:center;
+	margin-top:5px;
+	font-family:'Brown';
+	font-size:1.5em;
+}
+
+/*==================================================
+=            Sign in with other options            =
+==================================================*/
+h3 {
+  color: #fff;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family:'Brown';
+}
+
+h3 {
+  overflow: hidden;
+}
+h3 span {
+  position: relative;
+  display: inline-block;
+}
+
+h3 span:before, h3 span:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  margin-top: -1px;
+  width: 2000px;
+  height: 2px;
+  background-color: #fff;
+}
+
+h3 {
+  text-align: center;
+}
+h3 span {
+  padding: 0 10px;
+}
+h3 span:after {
+  left: 100%;
+}
+h3 span:before {
+  right: 100%;
+}
+.social-links {
+	margin-top:5px;
+}
+
+/*=====  End of Sign in with other options  ======*/
+
+/*===============================================
+=            Don't have account part            =
+===============================================*/
+
+.no-account {
+	margin-top:10px;
+	}
+.row.no-account h6 {
+	font-family: 'Brown';
+	font-size:1.5em;
+}
+.button-register {
+	margin-bottom: 15px;
+	line-height: 25px;
+}
+.btn {
+	padding: 0;
+	height: 30px;
+	line-height: 32px;
+}
+/*=====  End of Don't have account part  ======*/
+
+
+
+/*=======================================
+=            Sign up section            =
+=======================================*/
+.form-sign-up {
+	margin-top:20px;
+}
+.new-account {
+	text-align:center;
+	padding-top:40px;
+	text-transform:uppercase;
+
+}
+select.form-control {
+	background: transparent;
+	color: #e7eded;
+	margin: 15px 0;
+	border-top: none;
+	border-left: none;
+	border-right: none;
+	border-bottom: 1px solid #e7eded;
+	border-radius: 0;
+}
+
+
+
+.button-more-info {
+	margin-top:0;
+	margin-bottom: 15px;
+}
+.no-account-title {
+	margin-top:25px;
+	font-family: 'Brown';
+	font-size: 13px;
+}
+/*=====  End of Sign up section  ======*/
+
+/*SCHEDULE PART*/
+
+.hr-container {
+	padding:0;
+	margin:0;
+	padding-top:40px;
+}
+.first-hr {
+	margin-bottom:0;
+}
+.second-hr {
+	margin-top:0;
+}
+.schedule-title {
+	padding:0 30px;
+	background: #053541;
+}
+.schedule-title {
+	
+}
+.title-page {
+	text-align: center;
+	color:#e7eded;
+	font-size:17px;
+	margin:12px 0;
+}
+.glyphicon-home {
+	color:#2a4f57;
+	font-size:20px;
+	padding-top:12px;
+}
+
+
+
+/* Custom calendar elements */
+
+
+.fc-calendar-container {
+	position: relative;
+	height: 400px;
+	width: 400px;
+}
+
+.fc-calendar {
+	width: 100%;
+	height: 100%;
+}
+
+.fc-calendar .fc-head {
+	height: 30px;
+	line-height: 30px;
+	background: #ccc;
+	color: #fff;
+}
+
+.fc-calendar .fc-body {
+	border: 1px solid #ddd;
+	height: -moz-calc(100% - 30px);
+	height: -webkit-calc(100% - 30px);
+	height: 100%;
+	height: calc(100% - 30px);
+	position: relative;
+	width: 100%;
+}
+
+.fc-calendar .fc-row {
+	width: 100%;
+	border-bottom: 1px solid #ddd;
+}
+
+.fc-four-rows .fc-row  {
+	height: 25%;
+}
+
+.fc-five-rows .fc-row  {
+	height: 20%;
+}
+
+.fc-six-rows .fc-row {
+	height: 16.66%;
+	height: -moz-calc(100%/6);
+	height: -webkit-calc(100%/6);
+	height: calc(100%/6);
+}
+
+.fc-calendar .fc-row > div,
+.fc-calendar .fc-head > div {
+	float: left;
+	height: 100%;
+	width:  14.28%; /* 100% / 7 */
+	width: -moz-calc(100%/7);
+	width: -webkit-calc(100%/7);
+	/* width: calc(100%/7); */ 
+	position: relative;
+}
+
+/* IE 9 is rounding up the calc it seems */
+.ie9 .fc-calendar .fc-row > div,
+.ie9 .fc-calendar .fc-head > div {
+	width:  14.2%;
+}
+
+.fc-calendar .fc-row > div {
+	border-right: 1px solid #ddd;
+	padding: 4px;
+	overflow: hidden;
+	position: relative;
+}
+
+.fc-calendar .fc-head > div {
+	text-align: center;
+}
+
+.fc-calendar .fc-row > div > span.fc-date {
+	bottom: 5px;
+	color: #ddd;
+	font-size: 20px;
+	font-weight: 700;
+	height: 20px;
+	line-height: 20px;
+	position: absolute;
+	right: 5px;
+	text-align: right;
+	text-shadow: 0 -1px 0 rgba(255,255,255,0.8);
+	width: 30px;
+}
+
+.fc-calendar .fc-row > div time {
+	display: none;
+}
+
+.fc-calendar .fc-row > div > span.fc-weekday {
+	padding-left: 5px;
+	display: none;
+}
+
+.fc-calendar .fc-row > div.fc-today {
+	background: #fff4c3;
+}
+
+.fc-calendar .fc-row > div.fc-out {
+	opacity: 0.6;
+}
+
+.fc-calendar .fc-row > div:last-child,
+.fc-calendar .fc-head > div:last-child {
+	border-right: none;
+}
+
+.fc-calendar .fc-row:last-child {
+	border-bottom: none;
+}
+
+.custom-calendar-wrap {
+	margin: 10px auto;
+	position: relative;
+	overflow: hidden;
+}
+
+.custom-inner {
+	background: #fff;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.custom-inner:before,
+.custom-inner:after  {
+	content: '';
+	width: 99%;
+	height: 50%;
+	position: absolute;
+	background: #f6f6f6;
+	bottom: -4px;
+	left: 0.5%;
+	z-index: -1;
+	box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.custom-inner:after {
+	content: '';
+	width: 98%;
+	bottom: -7px;
+	left: 1%;
+	z-index: -2;
+}
+
+.custom-header {
+	background: #e7eded;
+	border-bottom: 1px solid #ddd;
+	height: 70px;
+	padding: 5px 10px 10px 20px;
+	position: relative;
+}
+
+.custom-header h2,
+.custom-header h3 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.custom-header h2 {
+	color: #495468;
+	font-weight: 300;
+	font-size: 18px;
+	margin-top: 10px;
+	font-family:'Brown';
+}
+
+.custom-header h3 {
+	font-size: 10px;
+	font-weight: 700;
+	color: #b7bbc2;
+	margin:0;
+}
+
+.custom-header nav span {
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	color: transparent;
+	cursor: pointer;
+	font-size: 20px;
+	height: 30px;
+	line-height: 30px;
+	margin: 0 1px;
+	position: absolute;
+	top: 17px;
+	user-select: none;
+	width: 30px;
+}
+
+.custom-header nav span:first-child {
+	left: 5px;
+}
+
+.custom-header nav span:last-child {
+	right: 5px;
+}
+
+.custom-header nav span:before {
+	color: #053541;
+	font-family: 'fontawesome-selected';
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.custom-header nav span.custom-prev:before {
+	content: '\25c2';
+}
+
+.custom-header nav span.custom-next:before {
+	content: '\25b8';
+}
+
+.custom-header nav span:hover:before {
+	color: #495468;
+}
+
+.custom-content-reveal {
+	background:transparent;
+	bottom:0;
+	height: 100%;
+	position:relative;
+	text-align: center;
+	width: 100%;
+	z-index: 100;
+}
+
+.custom-content-reveal span.custom-content-close {
+	background: #0e3b47;
+	box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+	cursor: pointer;
+	height: 25px;
+	line-height: 23px;
+	padding: 0;
+	position: absolute;
+	right: 0;
+	text-align: center;
+	top: 5px;
+	width: 25px;
+}
+
+.custom-content-reveal span.custom-content-close:after {
+	content: 'x';
+	font-size: 18px;
+	color: #fff;
+}
+
+.custom-content-reveal a,
+.custom-content-reveal span {
+	font-size: 22px;
+	display: block;
+}
+li.list-group-item.date {
+	background:transparent;
+	border-bottom:1px solid #b2c4c8;
+	border-top:none;
+	border-right:none;
+	border-left:none;
+	font-family:'Brown';
+}
+.list-group-item:last-child {
+	border-radius:0;
+}
+span#container-date {
+	display:flex;
+	justify-content: space-around;
+}
+span.left-text-span {
+	font-family:"Brown";
+	padding:28px 0;
+	font-size:25px;
+}
+span.text-right-span {
+	padding:20px 0;
+	font-size:20px;
+	fontfamily:'Brown';
+}
+.custom-content-reveal h4 {
+	background:transparent;
+	border-bottom: 1px solid #ddd;
+	box-shadow: 0 1px rgba(255,255,255,0.9);
+	color: #053541;
+	font-size: 13px;
+	font-weight: 300;
+	letter-spacing: 3px;
+	margin-bottom: 30px;
+	padding: 20px;
+	text-transform: uppercase;
+}
+
+.custom-content-reveal span {
+	color: #053541;
+}
+
+.custom-content-reveal a {
+	color: #ef4f69;
+}
+
+.custom-content-reveal time{
+	display: none;
+}
+
+.custom-content-reveal a:hover {
+	color: #333;
+}
+
+/* Modifications */
+
+.fc-calendar-container {
+	background: #e7eded;
+	box-shadow: inset 0 1px rgba(255,255,255,0.8);
+	height: 250px;
+	padding: 30px;
+	width: auto;
+}
+
+.fc-calendar .fc-head {
+	background: transparent;
+	color: #053541;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+.fc-calendar .fc-row > div {
+	cursor: pointer;
+}
+
+.fc-calendar .fc-row > div:empty {
+	background: transparent;
+	cursor: default;
+}
+
+.fc-calendar .fc-row > div > span.fc-date {
+	color: #053541;
+	font-weight: 400;
+	left: 50%;
+	margin: -10px 0 0 -15px;
+	pointer-events: none;
+	text-align: center;
+	top: 50%;
+}
+
+.fc-calendar .fc-row > div > span.fc-emptydate {
+	color: #ccc;
+}
+
+.fc-calendar .fc-row > div.fc-today {
+	background: #f18879;
+	box-shadow: inset 0 -1px 1px rgba(0,0,0,0.1);
+}
+
+.fc-calendar .fc-row > div.fc-today > span.fc-date {
+	color: #fff;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.1);
+}
+
+.fc-calendar .fc-row > div.fc-content:after {
+	bottom: 3px;
+	color: #053541;
+	content: '\00B7';
+	font-size: 70px;
+	left: 30%;
+	line-height: 20px;
+	position: absolute;
+	text-align: center;
+	width: 100%;
+}
+
+.fc-calendar .fc-row > div.fc-today.fc-content:after {
+	color: #fff;
+}
+
+.fc-calendar .fc-row > div.fc-content:hover:after{
+	color: #ef4f69;
+}
+
+.fc-calendar .fc-row > div.fc-today.fc-content:hover:after{
+	color: #fff;
+}
+
+.fc-calendar .fc-row > div > div a,
+.fc-calendar .fc-row > div > div span {
+	display: none;
+	font-size: 22px;
+}
+
+@media screen and (max-width: 768px) {
+	.fc-calendar-container {
+		height: 225px;
+	}
+	.fc-calendar .fc-row > div > span.fc-date {
+		font-size: 15px;
+	}
+}
+
+/*=========================================
+=            Info/Contact part            =
+=========================================*/
+.accordion {
+	margin-top:25px;
+}
+.panel {
+  border-width: 0 0 1px 0;
+  border-style: solid;
+  border-color: #b2c4c8;
+  background: none;
+  box-shadow: none;
+}
+.panel-body p {
+	color:#e7eded;
+	font-family:'Brown';
+	font-size:13px;
+
+}
+.panel:last-child {
+  border-bottom: none;
+}
+
+.panel-group > .panel:first-child .panel-heading {
+  border-radius: 4px 4px 0 0;
+}
+
+.panel-group .panel {
+  border-radius: 0;
+}
+
+.panel-group .panel + .panel {
+  margin-top: 0;
+}
+
+.panel-heading {
+  background-color: #e7eded;
+  border-radius: 0;
+  border: none;
+  color: #fff;
+  padding: 0;
+}
+
+.panel-title a {
+  display: block;
+  color: #053541;
+  padding: 15px;
+  position: relative;
+  font-size: 12px;
+  font-weight: 400;
+}
+
+.panel-body {
+  background: #f18879;
+}
+
+.panel:last-child .panel-body {
+  border-radius: 0 0 4px 4px;
+}
+
+.panel:last-child .panel-heading {
+  border-radius: 0 0 4px 4px;
+  -webkit-transition: border-radius 0.3s linear 0.2s;
+  transition: border-radius 0.3s linear 0.2s;
+}
+
+.panel:last-child .panel-heading.active {
+  border-radius: 0;
+  -webkit-transition: border-radius linear 0s;
+  transition: border-radius linear 0s;
+}
+
+#accordion .panel-heading a:before {
+  content: '\e113';
+  font-size: 13px;
+  position: absolute;
+  font-family: 'Glyphicons Halflings';
+  right: 15px;
+  top: 15px;
+  color:#b2c4c8;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+#accordion .panel-heading a:hover:before {
+  content: '\e113';
+  font-size: 13px;
+  position: absolute;
+  font-family: 'Glyphicons Halflings';
+  right: 15px;
+  top: 15px;
+  color:#b2c4c8;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+/*=====  End of Info/Contact part  ======*/
+
+/* Notification part */
+
+.noti
+{
+	float:  left;
+	width:  100%;
+	border-bottom: 1px solid lightgrey;
+	padding-bottom: 5%;
+	margin-top: 8%;
+}
+
+.pic
+{
+	float: left;
+	width:  15%;
+	margin-left:  9%;
+	margin-top: 5%;
+}
+
+.pic img
+{
+	width: 90%;
+	border-radius: 50%;
+}
+
+.info
+{
+	width:  65%;
+	margin-left: 2%;
+	float:  left;
+	font-size: 10px;
+	color:#e7eded;
+}
+.time {
+	font-size:13px;
+	font-family:'Brown';
+}
+.time p
+{
+	text-transform: lowercase;
+	font-size:  9px;
+}
+
+.person
+{
+	margin-top: 2%;
+	font-family:'EvelethRegular';
+	font-size:12px;
+}
+
+.text-message
+{
+	font-family:'Brown';
+	font-size:12px;
+
+}
+
+/* End of Notification part*/
+
+
+/* Settings part */
+
+
+
+/*SETTINGS*/
+
+.setting
+{
+	float:  left;
+	width:  100%;
+	padding-bottom: 5%;
+	margin-top: 5%;
+	font-size:11.5px;
+	font-family:'Brown';
+	color:#e7eded;
+}
+
+/*SETTING*/
+
+.set_left
+{
+	float: left;
+	width:  40%;
+	margin-left:  20%;
+}
+.set_right
+{
+	width:  10%;
+	margin-left: 5%;
+	float:  left;
+}
+
+/*TOGGLE*/
+
+.toggle
+{
+	margin-top: 10%;
+	word-break: break-all;
+
+}
+
+/*SWITCH CSS*/
+
+.onoffswitch {
+    position: relative; width: 50px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    border: 2px solid #000000; border-radius: 20px;
+}
+.onoffswitch-inner {
+    display: block; width: 200%; margin-left: -100%;
+    transition: margin 0.3s ease-in 0s;
+}
+.onoffswitch-inner:before, .onoffswitch-inner:after {
+    display: block; float: left; width: 50%; height: 20px; padding: 0; line-height: 20px;
+    font-size: 14px; color: white; font-family: Trebuchet, Arial, sans-serif; font-weight: bold;
+    box-sizing: border-box;
+}
+.onoffswitch-inner:before {
+    content: "";
+    padding-left: 10px;
+    background-color: #000000; color: #FFFFFF;
+}
+.onoffswitch-inner:after {
+    content: "";
+    padding-right: 10px;
+    background-color: #000000; color: #999999;
+    text-align: right;
+}
+.onoffswitch-switch {
+    display: block; width: 17px; margin: 4px;
+    background: #545454;
+    position: absolute; top: 0; bottom: 0;
+    right: 26px;
+    border: 2px solid #000000; border-radius: 20px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-inner {
+    margin-left: 0;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label .onoffswitch-switch {
+    right: 0px; 
+    background-color: #f18879; 
+}
+
+/* End of settings part */
+
+
+/*=======================================
+=            Dashboard        		    =
+=======================================*/
+
+/* Background colors for dashboard*/
+
+.background-color {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	height: auto;
+}
+
+.dashboard-container {
+	position: relative;
+    margin-top: -100px;
+    z-index: 3;
+}
+
+.first-color {
+	margin-top:  -400px;
+	margin-left:  -200px;
+	width: 1000px;
+    height: 500px;
+    background-color: #053541;
+    position: relative;
+    overflow: hidden;
+    /* Rotate div */
+    -ms-transform: rotate(-24deg); /* IE 9 */
+    -webkit-transform: rotate(-24deg); /* Chrome, Safari, Opera */
+    transform: rotate(-24deg);
+    z-index: 2;
+}
+
+.second-color {
+	margin-top: -100px;
+	width: 100%;
+	height: 10000px;
+	position: absolute;
+    background-color: #8bc7b9;
+}
+.button-dashboard {
+	background: transparent;
+	border: 1px solid #053541;
+	color: #053541;
+}
+
+/* User profile */
+
+.user-profile {
+	float: none;
+}
+
+.user-profile h3, p {
+	text-transform: none;
+	font-family: Brown;
+	margin: 0;
+}
+
+.user-profile h3 {
+	margin: 25px auto 5px auto;
+}
+
+.user-profile p {
+	margin-bottom: 5px;
+}
+
+.user-profile .profile-image {
+	border-radius: 50%;
+	border: 10px solid #f18879;
+	height: 150px;
+	margin: 0 auto 15px auto;
+}
+
+.user-profile .profile-edit {
+	width: 15px;
+	margin: 0 auto 7px auto;
+}
+
+.settings {
+	position: absolute;
+	right: 10%;
+	top: 150px;
+}
+
+.settings img {
+	width: 20px;
+}
+
+.breaker {
+	top: 10px;
+	width: 50%;
+	height: 1px;
+	background-color: #053541;
+	margin: 0 auto;
+	position: relative;
+}
+
+.fat-breaker {
+	height: 3px;
+	background-color: #053541;
+	width: 50%;
+	margin: 0 auto;
+	position: absolute;
+	top: -1px;
+	left: 25%;
+}
+
+/* Dashboard tiles */
+
+.dashboard-tile-wrapper {
+	width: 90%;
+	margin: 30px auto;
+	overflow: hidden;
+}
+
+.dashboard-tile-container {
+	background-color: #b5dbd2;
+	padding: 0;
+}
+
+.dashboard-tile {
+	height: 132px;
+	border-right: 1px solid rgba(93, 136, 137, 0.5);
+	border-bottom: 1px solid rgba(93, 136, 137, 0.5);
+}
+
+a:last-of-type .dashboard-tile {
+	border-bottom: 0;
+}
+
+.dashboard-tile-container:last-of-type .dashboard-tile {
+	border-right: 0;
+}
+
+.dashboard-tile img {
+	width: 30%;
+	margin: 0 auto;
+	padding: 30px 0 5px 0;
+}
+
+.dashboard-tile h2 {
+	font-family: Brown;
+	font-size: 16px;
+	text-align: center;
+	color: #053541;
+	margin: 0;
+	padding-bottom: 30px;
+}
+
+/* Logout button */
+
+.dashboard-container .btn {
+	margin: 0 auto 20px auto;
+}
+
+/*=====  End of Dashboard section  ======*/
+
+
+/*=======================================
+=            My team        		    =
+=======================================*/
+
+/* My team menu */
+
+.table {
+	display: table;
+    height: 100%;
+    width: 100%;
+    table-layout: fixed;
+}
+
+.table .cell {
+    width: 100%;
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.menu-container {
+	margin: 20px 0 0 0;
+	border-top: 1px solid rgba(93, 136, 137, 0.5);
+	padding: 0;
+}
+
+.menu {
+	height: 40px;
+}
+
+.menu .col-xs-8 {
+	border-bottom: 1px solid rgba(93, 136, 137, 0.5);
+	padding: 0;
+	height: inherit;
+}
+
+.menu .col-xs-2 {
+	padding: 0;
+	height: inherit;
+}
+
+.menu img {
+	width: 30%;
+}
+
+.menu h1 {
+	text-transform: uppercase;
+	font-size: 16px;
+	margin: 0;
+	padding: 10px 0;
+}
+
+/* My team members */
+
+.myteam {
+
+}
+
+.myteam .row .col-xs-4 {
+	margin-top: 10px;
+}
+
+.team-member {
+	height: 100px;
+	margin: 20px 0;
+}
+
+.team-member h2 {
+	text-align: center;
+	font-size: 12px;
+	font-family: Brown;
+	margin: 10px 0 5px 0;
+}
+
+.team-member h3 {
+	margin: 0;
+	text-align: center;
+	font-size: 10px;
+	font-family: Brown;
+	text-transform: none;
+}
+
+.team-member img {
+	width: 60%;
+	border-radius: 50%;
+}
+
+/*=====  End of Dashboard section  ======*/
+
+/*=======================================
+=            My ticket        		    =
+=======================================*/
+
+.ticket-wrap {
+	position: relative;
+	background: #8bc7b9;
+	width: 100%;
+	border-radius: 4px;
+	padding: 1%;
+	margin-top: 10%;
+}
+.ticket-wrap .ticket-text{
+	margin-top:15%;
+	margin: 0 auto;
+}
+
+.ticket-text, #schedule-t {
+	line-height: 1.7;
+
+}
+
+.ticket {
+
+	height: 70%;
+	margin: 0 auto;
+	position: relative;
+	top: 40%;
+}
+
+.ticket img {
+	width: 100%;
+}
+
+/*=====  End of My Ticket  ======*/
+
+/*=======================================
+=            Map        		    =
+=======================================*/
+#map {
+        height: 89vh;
+      }
+
+
+
