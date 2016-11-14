@@ -1265,8 +1265,10 @@ a:last-of-type .dashboard-tile {
 =            Map        		    =
 =======================================*/
 #map {
-        height: 89vh;
+        height: 100vh;
       }
+
+      /*Write a comment*/
 
 
 
