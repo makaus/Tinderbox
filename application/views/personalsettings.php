@@ -30,7 +30,7 @@
     			<a href="dashboard.php"><span class="glyphicon glyphicon-home"></span></a>
     		</div>
     		<div class="col-xs-8">
-    			<h2 class="title-page">Personal settings</h2>
+    			<h2 class="title-page">Profile info</h2>
     		</div>
     		<div class="col-xs-offset-1 col-xs-10">
     			<hr class="second-hr">
@@ -62,7 +62,7 @@
       </div>
       
       <div class="col-xs-4">
-        <h4 class="headers-input">Email*:</h4>
+        <h4 class="headers-input email">Email*:</h4>
       </div>
       <div class="col-xs-8 Inputs-profile-main">
         <div class="input-group Inputs-profile-wrap">
