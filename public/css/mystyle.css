@@ -1229,33 +1229,18 @@ a:last-of-type .dashboard-tile {
 =            My ticket        		    =
 =======================================*/
 
-.ticket-wrap {
-	position: relative;
-	background: #8bc7b9;
+.container-ticket,
+.row-ticket,
+.col-ticket {
 	width: 100%;
-	border-radius: 4px;
-	padding: 1%;
-	margin-top: 10%;
-}
-.ticket-wrap .ticket-text{
-	margin-top:15%;
-	margin: 0 auto;
+	height: 100%;
 }
 
-.ticket-text, #schedule-t {
-	line-height: 1.7;
-
+.row-ticket {
+	margin: 0;
 }
-
-.ticket {
-
-	height: 70%;
-	margin: 0 auto;
-	position: relative;
-	top: 40%;
-}
-.ticket img {
-	width: 100%;
+.img-responsive {
+	margin: 15% auto;
 }
 
 /*=====  End of My Ticket  ======*/
@@ -1263,10 +1248,26 @@ a:last-of-type .dashboard-tile {
 /*=======================================
 =            Map        		    =
 =======================================*/
-#map {
-        height: 100vh;
-      }
+.container.map-container,
+.map-row {
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+#map_canvas {
+	height: 95%;
+	margin: 0;
+	padding: 0;
+}
 
+.map_wrap {
+	width: auto;
+	height: 100%;
+}
+
+.marker-infowindow {
+	color: #000;
+}
 /* Personal settings */
 
 .profile-picture {

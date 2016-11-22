@@ -8,9 +8,10 @@
   <link rel="stylesheet" href="<?php echo base_url(); ?>public/css/mystyle.css">
   </head>
 	<body>
-	<div class="background">
-    	<img src="img/background-schedule.png" alt="background-ticket">
-  	</div>
+	  <!-- Full width - height background -->
+  <div class="background">
+    <img src="<?php echo base_url(); ?>public/img/background-schedule.png" alt="background-map">
+  </div>
 	 <div class="container-fluid">
 	      <div class="row">
 	     		<div class="col-xs-12 hr-container">
@@ -22,7 +23,7 @@
 	 <div class="container schedule-title">
 	  	<div class="row">
 	  		<div class="col-xs-2">
-	  			<a href="dashboard.php"><span class="glyphicon glyphicon-home"></span></a>
+	  			<a href="<?php echo base_url(); ?>dashboard"><span class="glyphicon glyphicon-home"></span></a>
 	  		</div>
 	  		<div class="col-xs-8">
 	  			<h2 class="title-page">My ticket</h2>
@@ -33,34 +34,19 @@
 	  	</div>
 	 </div>
 
-		 <!-- Container for main content -->
-	<div class="container">
-		  	<div class="row">
-		  		<div class="col-xs-12">
-		  		<!-- Content goes bellow -->
-		  			<div class="ticket-wrap">
-		  				<div class="ticket">
-		  					<img src="qrcode.php?text=http://www.eal.dk&size=200&padding=10" alt="Ticket">
-				<!-- Content goes above -->
-						</div> 
-				<!-- End of ticket -->	
-<<<<<<< HEAD:ticket.php
-				
-		  		</div> <!-- End of ticket wrap-->
-		  		<div class="col-xs-12 ticket-text">
-	  			<h2 id="schedule-t">Your Ticket!</h2>
-	  		</div>
-			</div>	<!-- End of ticket xs-col-->	
-		</div> <!--End of row  -->
-=======
-		  			</div> <!-- End of ticket wrap-->
-			  		<div class="col-xs-12 ticket-text">
-		  				<h2 id="schedule-t">Let's Download <br> your Ticket!</h2>
-		  			</div>
-				</div>	<!-- End of ticket xs-col-->	
-			</div> <!--End of row  -->
->>>>>>> 85b7231bf813b63678d58ee61e5f54ab3858f539:application/views/ticket.php
-	</div> <!-- End of ticket container-->	
+	<!-- Container for main content -->
+	<div class="container container-ticket">
+		<div class="row row-ticket">
+			<div class="col-xs-12 col-ticket">
+			
+				<!-- Needs <php echo urlencode($ourdata);?> 
+				When database conection are ready. use something like 
+				echo 'user_id : '.$_GET['user_id']; or echo $_SESSION["user_id"]; -->
+				<img class="img-responsive" src="http://qrickit.com/api/qr?d=php echo urlencode($user_id);?>&fgdcolor=000000&bgdcolor=efefef&qrsize=350&t=p&e=m">
+			</div>
+		</div>
+	</div>
+	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>

@@ -2,4 +2,5 @@
 ## CodeIgniter ##
 application/config/database.php
 application/config/config.php
+application/logs
 

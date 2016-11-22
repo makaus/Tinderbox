@@ -35,10 +35,13 @@
         </div>
     </div>
   </div>
-    <div class="container-fluid" style="padding:0;">
-        <div class="col-xs-12">
-          <iframe src="https://www.google.com/maps/d/embed?mid=19LLUAOUsJY40jp_JCjU6wldOFWo" width="100%" height="500px"></iframe>
-        </div>
+  <div class="container map-container">
+    <div class="row map-row">
+      <div class="col-xs-12" id="map_canvas">
+          <?php echo $map['js']; ?>
+          <?php echo $map['html']; ?>
+      </div>
     </div>
+  </div>
   </body> 
 </html>
