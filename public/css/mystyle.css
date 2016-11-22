@@ -41,6 +41,10 @@ a:active {
 }
 input {
 	font-family: 'Brown';
+	opacity:0.5;
+}
+span.input-group-addon.icons {
+	opacity:0.5;
 }
 /*=====  End of Basic Style  ======*/
 
@@ -257,7 +261,7 @@ h3 span:before {
 .new-account {
 	text-align:center;
 	padding-top:40px;
-	text-transform:uppercase;
+	font-size:18px;
 
 }
 select.form-control {
@@ -269,6 +273,7 @@ select.form-control {
 	border-right: none;
 	border-bottom: 1px solid #e7eded;
 	border-radius: 0;
+	opacity:0.5;
 }
 
 
@@ -285,11 +290,12 @@ select.form-control {
 /*=====  End of Sign up section  ======*/
 
 /*SCHEDULE PART*/
-
+hr {
+	border-top:1px solid rgba(93, 136, 137, 0.5);
+}
 .hr-container {
 	padding:0;
 	margin:0;
-	padding-top:40px;
 }
 .first-hr {
 	margin-bottom:0;
@@ -480,7 +486,7 @@ select.form-control {
 .custom-header h2,
 .custom-header h3 {
 	text-align: center;
-	text-transform: uppercase;
+	
 }
 
 .custom-header h2 {
@@ -614,7 +620,6 @@ span.text-right-span {
 	letter-spacing: 3px;
 	margin-bottom: 30px;
 	padding: 20px;
-	text-transform: uppercase;
 }
 
 .custom-content-reveal span {
@@ -648,7 +653,6 @@ span.text-right-span {
 	color: #053541;
 	font-size: 12px;
 	font-weight: bold;
-	text-transform: uppercase;
 }
 
 .fc-calendar .fc-row > div {
@@ -1182,7 +1186,6 @@ a:last-of-type .dashboard-tile {
 }
 
 .menu h1 {
-	text-transform: uppercase;
 	font-size: 16px;
 	margin: 0;
 	padding: 10px 0;
@@ -1278,7 +1281,7 @@ a:last-of-type .dashboard-tile {
 .change-profile-ph {
 	display: block;
 	position: relative;
-	top: -37.5px;
+	top: -33px;
 	margin: 0 auto;
 	width: 143.8px;
 	text-align: center;
@@ -1303,8 +1306,8 @@ a:last-of-type .dashboard-tile {
 }
 .headers-input {
 	text-align: center;
-	margin-top: 10px;
-	font-size: 20px;
+	font-size: 18px;
+	font-family:'Brown';
 }
 .Inputs-profile + .glyphicon {
     position: absolute;
@@ -1313,11 +1316,15 @@ a:last-of-type .dashboard-tile {
     font-size: 12px;
     color:#cbd5d8 ;
 } 
-
+.headers-input.email {
+	position:relative;
+	right:2.5px;
+}
 .browse {
 	display: block;
 	margin: 0;
 	color:#cbd5d8;
+	font-size:7px;
 }
 span.glyphicon.glyphicon-picture {
 	color:#cbd5d8;
