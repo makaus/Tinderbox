@@ -13004,3 +13004,16 @@ DEBUG - 2016-11-22 22:04:53 --> Global POST, GET and COOKIE data sanitized
 INFO - 2016-11-22 22:04:53 --> Input Class Initialized
 INFO - 2016-11-22 22:04:53 --> Language Class Initialized
 ERROR - 2016-11-22 22:04:53 --> 404 Page Not Found: Public/css
+ERROR - 2016-11-22 22:45:30 --> 404 Page Not Found: Public/css
+ERROR - 2016-11-22 22:45:30 --> 404 Page Not Found: Public/css
+ERROR - 2016-11-22 22:45:40 --> 404 Page Not Found: Public/css
+ERROR - 2016-11-22 22:45:40 --> 404 Page Not Found: Public/css
+ERROR - 2016-11-22 22:45:43 --> 404 Page Not Found: Public/css
+ERROR - 2016-11-22 22:45:43 --> 404 Page Not Found: Public/css
+ERROR - 2016-11-22 22:45:44 --> 404 Page Not Found: Public/css
+ERROR - 2016-11-22 22:45:44 --> 404 Page Not Found: Public/css
+ERROR - 2016-11-22 22:45:45 --> 404 Page Not Found: Schedulephp/index
+ERROR - 2016-11-22 22:45:48 --> 404 Page Not Found: Myteamphp/index
+ERROR - 2016-11-22 22:45:51 --> 404 Page Not Found: Notificationphp/index
+ERROR - 2016-11-22 22:46:00 --> 404 Page Not Found: Public/css
+ERROR - 2016-11-22 22:46:03 --> 404 Page Not Found: Dashboardphp/index
