@@ -88,7 +88,7 @@ $(function () {
                             }
 
                         },
-                        caldata : TinderboxEvents,
+                        caldata : getSchedule(),
                         displayWeekAbbr : true,
                         events: 'click'
                     } ),
