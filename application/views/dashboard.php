@@ -29,7 +29,7 @@
 				</div></a>
 				<div class="dashboard-tile-wrapper">
 					<div class="col-xs-6 dashboard-tile-container">
-						<a href="myteam.php"><div class="dashboard-tile">
+						<a href="myteam"><div class="dashboard-tile">
 							<img src="<?php echo base_url(); ?>public/img/team.png" alt="Team" class="img-responsive center-block">
 							<h2>My team</h2>
 						</div></a>

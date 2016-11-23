@@ -20,7 +20,7 @@
 				<div class="col-xs-2">
 					<div class="table">
 						<div class="cell">
-							<a href="dashboard.php"><img src="<?php echo base_url(); ?>public/img/home-button.png" alt="" class="img-responsive center-block"></a>
+							<a href="dashboard"><img src="<?php echo base_url(); ?>public/img/home-button.png" alt="" class="img-responsive center-block"></a>
 						</div>
 					</div>
 				</div>
@@ -40,71 +40,26 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-xs-4">
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member1.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Lara Andersen</h2>
-				<h3>Volunteer</h3>
-			</div>
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member1.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Lara Andersen</h2>
-				<h3>Volunteer</h3>
-			</div>
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member1.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Lara Andersen</h2>
-				<h3>Volunteer</h3>
-			</div>
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member1.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Lara Andersen</h2>
-				<h3>Volunteer</h3>
-			</div>
-		</div>
-		<div class="col-xs-4">
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member2.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Jonna Olsen</h2>
-				<h3>Volunteer</h3>
-			</div>
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member2.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Jonna Olsen</h2>
-				<h3>Volunteer</h3>
-			</div>
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member2.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Jonna Olsen</h2>
-				<h3>Volunteer</h3>
-			</div>
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member2.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Jonna Olsen</h2>
-				<h3>Volunteer</h3>
-			</div>
-		</div>
-		<div class="col-xs-4">
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member3.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Lone Larsen</h2>
-				<h3>Volunteer</h3>
-			</div>
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member3.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Lone Larsen</h2>
-				<h3>Volunteer</h3>
-			</div>
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member3.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Lone Larsen</h2>
-				<h3>Volunteer</h3>
-			</div>
-			<div class="team-member">
-				<img src="<?php echo base_url(); ?>public/img/member3.jpg" alt="Member" class="img-responsive center-block">
-				<h2>Lone Larsen</h2>
-				<h3>Volunteer</h3>
-			</div>
+		<div class="col-xs-12 team">
+			<?php 
+			// Check if the data passed is a string (which is the error)
+			if (is_string($r)) {
+				// Echos the error
+				echo '<h1>' . $r . '</h1>';
+			} ?>
+
+			<?php 
+			// Checks if the data passed is an array (which is our team data)
+			if(is_array($r)) {
+				foreach ($r as $key => $value) { ?>
+					<div class="team-member col-xs-4">
+						<img src="<?php echo base_url(); ?>public/img/<?php echo $value->image ?>" alt="Member" class="img-responsive center-block">
+						<h2><?php echo $value->name ?></h2>
+						<h3>Volunteer</h3>
+					</div>
+			 	<?php
+			 	}
+			} ?>
 		</div>
 		</div>
 	</div>
