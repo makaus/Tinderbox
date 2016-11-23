@@ -35,13 +35,12 @@
         </div>
     </div>
   </div>
-  <div class="container map-container">
-    <div class="row map-row">
-      <div class="col-xs-12" id="map_canvas">
-          <?php echo $map['js']; ?>
-          <?php echo $map['html']; ?>
-      </div>
+  <div class="container-fluid">
+    <div class="row">
+      <?php echo $map['js']; ?>
+      <?php echo $map['html']; ?>
     </div>
   </div>
+
   </body> 
 </html>

@@ -38,11 +38,10 @@
 	<div class="container container-ticket">
 		<div class="row row-ticket">
 			<div class="col-xs-12 col-ticket">
-			
 				<!-- Needs <php echo urlencode($ourdata);?> 
 				When database conection are ready. use something like 
 				echo 'user_id : '.$_GET['user_id']; or echo $_SESSION["user_id"]; -->
-				<img class="img-responsive" src="http://qrickit.com/api/qr?d=php echo urlencode($user_id);?>&fgdcolor=000000&bgdcolor=efefef&qrsize=350&t=p&e=m">
+				<img class="img-responsive" src="http://qrickit.com/api/qr?d='<?php echo 'test';?>'&fgdcolor=000000&bgdcolor=efefef&qrsize=350&t=p&e=m">
 			</div>
 		</div>
 	</div>
