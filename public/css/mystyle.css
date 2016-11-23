@@ -1264,7 +1264,9 @@ a:last-of-type .dashboard-tile {
 	margin: 0;
 }
 
-
+.img-ticket {
+	margin: 25% auto;
+}
 /*=====  End of My Ticket  ======*/
 
 /*=======================================
