@@ -60,6 +60,7 @@ span.input-group-addon.icons {
   left: -50%; 
   width: 200%; 
   height: 200%;
+  z-index: -2;
 }
 .background img {
   position: absolute; 
@@ -85,6 +86,26 @@ span.input-group-addon.icons {
 }
 .logo {
 	margin-top:5px;
+}
+.container.language {
+	position: relative;
+}
+span.break-left {
+	position: absolute;
+	top: 77.5px;
+	background: #fff;
+	height: 1px;
+	width: 60px;
+	right: 0;
+	z-index: -1;
+}
+span.break {
+	position: absolute;
+	top: 77.5px;
+	background: #fff;
+	height: 1px;
+	width: 60px;
+	left: 0;
 }
 @media (max-width:768px) {
 	.language img {

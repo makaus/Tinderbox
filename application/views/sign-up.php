@@ -15,16 +15,21 @@
     <img src="<?php echo base_url(); ?>public/img/bg-sign-in.png" alt="background-sign-up">
   </div>
 
-  <div class="container">
-      <div class="row">
-          <!-- LANGUAGES -->
+ <div class="container">
+  <div class="row">
+     <div class="language-container">
           <div class="col-xs-6 language language-eng">
-            <a  href=""><img class="img-responsive pull-right" src="<?php echo base_url(); ?>public/img/e-flag.png" alt="english-flag"></a>
+            <a class="img" href=""><img class="img-responsive pull-right" src="<?php echo base_url(); ?>public/img/e-flag.png" alt="english-flag"></a>
+            <span class="break-left"></span>
           </div>
           <div class="col-xs-6 language language-dk">
-            <a  href=""><img class="img-responsive pull-left" src="<?php echo base_url(); ?>public/img/d-flag.png" alt="danish-flag"></a>
+            <a  class="img" href=""><img class="img-responsive pull-left" src="<?php echo base_url(); ?>public/img/d-flag.png" alt="danish-flag"></a>
+            <span class="break"></span>
           </div> <!-- End of Languages -->
       </div>
+  </div>
+</div>
+  <div class="container">
       <div class="row">
           <!--LOGO -->
           <div class="col-xs-offset-1 col-xs-10">
