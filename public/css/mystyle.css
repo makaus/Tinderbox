@@ -1211,7 +1211,29 @@ a:last-of-type .dashboard-tile {
 	margin: 0;
 	padding: 10px 0;
 }
-
+.button-modal {
+	height: 25px;
+	line-height: 0;
+	padding: 15px;
+	font-family: EvelethThin;
+	background: #f18879;
+	color: #fff9f4;
+}
+.modal-header {
+	background: #fff9f4;
+	border-bottom: 1px solid #e7eded;
+}
+.modal-body {
+	background: #fff9f4;
+}
+.modal-title {
+	text-align: center;
+	color: #043540;
+}
+.button-title-modal {
+	background: transparent !important;
+	border: none;
+}
 /* My team members */
 
 .myteam {

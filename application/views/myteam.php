@@ -15,52 +15,68 @@
   	</div></div>
 	<div class="container myteam">
 		<div class="row">
-		<div class="col-xs-12 menu-container">
-			<div class="menu">
-				<div class="col-xs-2">
-					<div class="table">
-						<div class="cell">
-							<a href="dashboard"><img src="<?php echo base_url(); ?>public/img/home-button.png" alt="" class="img-responsive center-block"></a>
+			<div class="col-xs-12 menu-container">
+				<div class="menu">
+					<div class="col-xs-2">
+						<div class="table">
+							<div class="cell">
+								<a href="dashboard"><img src="<?php echo base_url(); ?>public/img/home-button.png" alt="" class="img-responsive center-block"></a>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-xs-8 text-center">
-					<div class="table">
-						<div class="cell">
-							<h1>My team</h1>
+					<div class="col-xs-8 text-center">
+						<div class="table">
+							<div class="cell">
+								<h1>My team</h1>
+							</div>
 						</div>
 					</div>
-				</div>
-				<div class="col-xs-2">
-					<div class="table">
-						<div class="cell">
-							<img src="<?php echo base_url(); ?>public/img/search.png" alt="" class="img-responsive center-block">
+					<div class="col-xs-2">
+						<div class="table">
+							<div class="cell">
+								<img src="<?php echo base_url(); ?>public/img/search.png" alt="" class="img-responsive center-block">
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-		<div class="col-xs-12 team">
-			<?php 
-			// Check if the data passed is a string (which is the error)
-			if (is_string($r)) {
-				// Echos the error
-				echo '<h1>' . $r . '</h1>';
-			} ?>
+			<div class="col-xs-12 team">
+				<?php 
+				// Check if the data passed is a string (which is the error)
+				if (is_string($r)) {
+					// Echos the error
+					echo '<h1>' . $r . '</h1>';
+				} ?>
 
-			<?php 
-			// Checks if the data passed is an array (which is our team data)
-			if(is_array($r)) {
-				foreach ($r as $key => $value) { ?>
-					<div class="team-member col-xs-4">
-						<img src="<?php echo base_url(); ?>public/img/<?php echo $value->image ?>" alt="Member" class="img-responsive center-block">
-						<h2><?php echo $value->name ?></h2>
-						<h3>Volunteer</h3>
-					</div>
-			 	<?php
-			 	}
-			} ?>
-		</div>
+				<?php 
+				// Checks if the data passed is an array (which is our team data)
+				if(is_array($r)) {
+					foreach ($r as $key => $value) { ?>
+						<div class="team-member col-xs-4">
+							<button class="button-title-modal" type="" data-toggle="modal" data-target="#team-modal">
+							<img src="<?php echo base_url(); ?>public/img/<?php echo $value->image ?>" alt="Member" class="img-responsive center-block"></button>
+							<div class="modal fade" id="team-modal">
+								<div class="modal-dialog" role="document">
+									<div class="modal-content">
+									    <div class="modal-header">
+									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+									          <span aria-hidden="true">&times;</span>
+									        </button>
+									        <h4 class="modal-title">Lara Andersen</h4>
+									    </div>
+									    <div class="modal-body">
+									        <button type="button" class="btn center-block button-modal">Send a message</button>
+									    </div>
+									</div><!-- /.modal-content -->
+								</div><!-- /.modal-dialog -->
+							</div><!-- /.modal -->
+							<h2><?php echo $value->name ?></h2>
+							<h3>Volunteer</h3>
+						</div>
+				 	<?php
+				 	}
+				} ?>
+			</div>
 		</div>
 	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
