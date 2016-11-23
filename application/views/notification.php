@@ -37,7 +37,20 @@
 		 <div class="container">
 		  	<div class="row">
 		  		<div class="col-xs-12">
-		  		
+
+		  		<?php foreach($notifications as $row): ?>
+				<div class="noti">
+						<div class="pic">
+							<img src="<?php echo base_url()."public/img/".$row->image; ?>">
+						</div>
+						<div class="info">
+							<div class="time"><?php echo $row->datetime; ?></div>
+							<div class="person"><?php echo $row->name; ?></div>
+							<div class="text-message"><p><?php echo $row->content; ?></p></div>
+						</div>
+					</div>
+			    <?php endforeach; ?>
+<!-- 
 			  		<div class="noti">
 						<div class="pic">
 							<img src="<?php echo base_url(); ?>public/img/boss.png">
@@ -58,7 +71,7 @@
 							<div class="person">SUPERVISOR</div>
 							<div class="text-message"><p>Guys, don't forget your lunch.<br />Between 12:00 and 15:00.</p></div>
 						</div>
-					</div>
+					</div> -->
 					
 				</div>
 			</div>				
