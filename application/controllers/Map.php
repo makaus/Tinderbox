@@ -8,7 +8,7 @@ class Map extends CI_controller {
 
 		// Map Options
 		$config = array();
-			// $config['map_height'] = '100%'; ##REMINDER##
+			$config['map_height'] = '100vh'; ##REMINDER##
 			$config['center'] = '55.382136, 10.341608';
 			$config['zoom'] = '16';
 			$config['class'] = 'map_wrap';
