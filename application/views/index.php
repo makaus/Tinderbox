@@ -14,7 +14,6 @@
   <div class="background">
     <img src="<?php echo base_url(); ?>public/img/bg-sign-in.png" alt="background-sign-in">
   </div>
-
 <div class="container">
   <div class="row">
      <div class="language-container">
@@ -30,7 +29,7 @@
   </div>
 </div>
 
-<div class="container">
+  <div class="container">
       <div class="row">
           
           <!--LOGO -->
@@ -41,17 +40,23 @@
           </div> <!-- End of LOGO-->
 
           <!-- FORM -->
+            
           <div class="col-xs-offset-1 col-xs-10 form">
             <form action="" method="POST" role="form">
+              <?php if (isset($error)) : ?>
+                  <h4 style="text-decoration:underline;" class="text-center"><?php echo $error; ?></h4>
+              <?php endif; ?>
                <div class="input-group">
                  <span class="input-group-addon icons"><span class="glyphicon glyphicon-user"></span></span>
-                  <input type="email" class="form-control InputEmail" placeholder="EMAIL">
+                  <input type="text" name="username" class="form-control InputEmail" placeholder="USERNAME">
                 </div>
+                <?php echo form_error('username'); ?>
                 <div class="input-group">
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-lock"></span></span>
-                  <input type="password" class="form-control InputPassword" placeholder="PASSWORD">
+                  <input type="password" name="password" class="form-control InputPassword" placeholder="PASSWORD">
                 </div>
-                <button type="submit" class="btn btn-primary btn-block button-submit">Login</button>
+                <?php echo form_error('password'); ?>
+                <button type="submit" value="Login" class="btn btn-primary btn-block button-submit">Login</button>
                  <span class="button-checkbox">
                     <button type="button" class="btn btn-signed" data-color="primary">Keep me Signed In</button>
                     <input type="checkbox" class="hidden" />
@@ -79,11 +84,11 @@
           </div>
       </div> <!-- END OF SOCIAL LINKS -->
       <div class="row no-account">
-        <div class="col-xs-12">
+        <div class="col-0xs-12">
           <h6 class="text-center">Don't have an account?</h6>
         </div>
         <div class="col-xs-offset-1 col-xs-10">
-          <button type="submit" class="btn btn-primary btn-block button-submit button-register">Register</button>
+          <button type="submit"  class="btn btn-primary btn-block button-submit button-register">Register</button>
         </div>
       </div>
   </div> <!-- END OF THE CONTAINER -->

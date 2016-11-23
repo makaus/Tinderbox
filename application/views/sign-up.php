@@ -14,8 +14,7 @@
   <div class="background">
     <img src="<?php echo base_url(); ?>public/img/bg-sign-in.png" alt="background-sign-up">
   </div>
-
- <div class="container">
+<div class="container">
   <div class="row">
      <div class="language-container">
           <div class="col-xs-6 language language-eng">
@@ -43,40 +42,49 @@
           </div>
           <!-- FORM -->
           <div class="col-xs-offset-1 col-xs-10 form-sign-up">
-            <form action="" method="POST" role="form">
+            <form method="POST" role="form">
+              <?php if (isset($error)) : ?>
+                  <h4 style="text-decoration:underline;" class="text-center"><?php echo $error; ?></h4>
+              <?php endif; ?>
                <div class="input-group">
                  <span class="input-group-addon icons"><span class="glyphicon glyphicon-user"></span></span>
-                  <input type="name" class="form-control InputEmail" placeholder="NAME">
+                  <input type="username" name="username" class="form-control InputEmail" placeholder="USERNAME">
                 </div>
+                <?php echo form_error('username'); ?>
                 <div class="input-group">
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-lock"></span></span>
-                  <input type="password" class="form-control InputPassword" placeholder="PASSWORD">
+                  <input type="password" name="password" class="form-control InputPassword" placeholder="PASSWORD">
                 </div>
+                 <?php echo form_error('password'); ?>
                 <div class="input-group">
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-lock"></span></span>
-                  <input type="password" class="form-control InputPassword" placeholder="REPEAT PASSWORD">
+                  <input type="password" name="password_confirm" class="form-control InputPassword" placeholder="REPEAT PASSWORD">
                 </div>
+                 <?php echo form_error('password_confirm'); ?>
                 <div class="input-group">
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-envelope"></span></span>
-                  <input type="email" class="form-control InputPassword" placeholder="EMAIL">
+                  <input type="email" name="email" class="form-control InputPassword" placeholder="EMAIL">
                 </div>
+                  <?php echo form_error('email'); ?>
                 <div class="input-group">
                   <span class="input-group-addon icons"><span class="glyphicon glyphicon-phone"></span></span>
-                  <input type="tel" class="form-control InputPassword" placeholder="PHONE NUMBER">
+                  <input type="tel" name="mobile" class="form-control InputPassword" placeholder="PHONE NUMBER">
                 </div>
-                <select class="form-control">
-                  <option>Choose Department</option>
-                  <option>1</option>
-                  <option>2</option>
-                  <option>3</option>
+                <?php echo form_error('mobile'); ?>
+                 <select name="department" class="form-control">
+                  <option value="" selected="selected">Choose Department</option>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
                 </select>
-                <select class="form-control">
-                  <option>Choose period</option>
-                  <option>Before the Festival</option>
-                  <option>During the Festival </option>
-                  <option>After the Festival</option>
+                <?php echo form_error('department'); ?>
+                <select name="period" class="form-control">
+                  <option value="" selected="selected">Choose period</option>
+                  <option value="Before the Festival">Before the Festival</option>
+                  <option value="During the Festival">During the Festival </option>
+                  <option value="After the Festival">After the Festival</option>
                 </select>
-
+                <?php echo form_error('period'); ?>
                 <button type="submit" class="btn btn-primary btn-block button-submit">Register</button>
             </form>
           </div> <!-- End of Form -->
