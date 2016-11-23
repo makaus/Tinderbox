@@ -1045,6 +1045,9 @@ span.text-right-span {
 	border: 1px solid #053541;
 	color: #053541;
 }
+.button-dashboard a {
+	color: #053541;
+}
 
 /* User profile */
 
