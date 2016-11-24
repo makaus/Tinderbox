@@ -47,7 +47,20 @@ class User extends CI_Controller {
 			$department = $this->input->post('department');
 			$period = $this->input->post('period');
 			if ($this->user_model->create_user($username, $email, $password, $mobile, $department, $period)) {
+				
 				// user creation ok
+				// keep the session
+				$user_id = $this->user_model->get_user_id_from_username($username);
+				$user    = $this->user_model->get_user($user_id);
+				$_SESSION['user_id']      = (int)$user->id;
+				$_SESSION['username']     = (string)$user->username;
+				$_SESSION['logged_in']    = (bool)true;
+				$_SESSION['is_confirmed'] = (bool)$user->is_confirmed;
+				$_SESSION['is_admin']     = (bool)$user->is_admin;
+				$_SESSION['teamid']		  = (int)$user->teamid;
+				$_SESSION['image']		  = (string)$user->image;
+				$_SESSION['email']		  = (string)$user->email;
+				$_SESSION['mobile']		  = (string)$user->mobile;
 				$this->load->view('dashboard', $data);
 			} 
 			else 
@@ -91,7 +104,10 @@ class User extends CI_Controller {
 				$_SESSION['logged_in']    = (bool)true;
 				$_SESSION['is_confirmed'] = (bool)$user->is_confirmed;
 				$_SESSION['is_admin']     = (bool)$user->is_admin;
-						
+				$_SESSION['teamid']		  = (int)$user->teamid;
+				$_SESSION['image']		  = (string)$user->image;
+				$_SESSION['email']		  = (string)$user->email;
+				$_SESSION['mobile']		  = (string)$user->mobile;		
 				$this->load->view('dashboard', $data);
 				
 			} 

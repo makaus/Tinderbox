@@ -16,10 +16,10 @@
 		<div class="container dashboard-container">
 			<div class="row">
 				<div class="col-xs-12 user-profile">
-					<h3 class="text-center">Amanda Nielsen</h3>
+					<h3 class="text-center"><?php echo $_SESSION['username']; ?></h3>
 					<p class="text-center">Odense, Denmark</p>
 					<a href="personalsettings"><img src="<?php echo base_url(); ?>public/img/edit.png" alt="Edit" class="img-responsive center-block profile-edit"></a>
-					<img src="<?php echo base_url(); ?>public/img/profile_image.jpg" alt="Profile Image" class="img-responsive center-block profile-image">
+					<img src="<?php echo base_url(); ?>public/img/<?php echo $_SESSION['image']; ?>" alt="Profile Image" class="img-responsive center-block profile-image">
 					<div class="breaker">
 						<div class="fat-breaker"></div>
 					</div>

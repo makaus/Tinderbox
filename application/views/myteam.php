@@ -70,7 +70,7 @@
 									</div><!-- /.modal-content -->
 								</div><!-- /.modal-dialog -->
 							</div><!-- /.modal -->
-							<h2><?php echo $value->name ?></h2>
+							<h2><?php echo $value->username ?></h2>
 							<h3>Volunteer</h3>
 						</div>
 				 	<?php

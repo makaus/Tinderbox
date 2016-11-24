@@ -6,7 +6,7 @@ var TinderboxEvents = {'TODAY' : '<span>Today</span>',};
 
 function getSchedule() {
 	jQuery.ajax({
-		url: 'http://localhost/tinderb/Tinderbox/schedule/getSchedule',
+		url: 'http://gabrielbrumea.info/Tinderboxofficial/index.php/schedule/getSchedule',
 		contentType: 'application/json',
 		type: 'GET',
 		async: false,

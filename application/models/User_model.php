@@ -38,7 +38,6 @@ class User_model extends CI_Model {
 		
 	}
 	
-	
 	public function get_user_id_from_username($username) {
 		
 		$this->db->select('id');

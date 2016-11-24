@@ -7,7 +7,7 @@ class Schedule_model extends CI_Model {
 
 
 		// Set this with session
-		$teamid = 1;
+		$teamid = $_SESSION['teamid'];
 
 		$result = $this->db->query(sprintf('SELECT `date`, starttime, task, location 
 			FROM schedule
