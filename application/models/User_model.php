@@ -96,4 +96,18 @@ class User_model extends CI_Model {
 		return $result->result();
 	}  
 
+	public function update_user($data) {
+
+		$query = sprintf('UPDATE users 
+			SET username = "%s", email = "%s", mobile ="%s"
+			WHERE id = "%s"'
+			, $data['username']
+			, $data['email']
+			, $data['mobile']
+			, $_SESSION['user_id']
+			);
+		$this->db->query($query);
+		return true;
+	}
+
 }

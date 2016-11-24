@@ -25,24 +25,24 @@
 
   
   <div class="container schedule-title">
-  	<div class="row">
-    		<div class="col-xs-2">
-    			<a href="dashboard"><span class="glyphicon glyphicon-home"></span></a>
-    		</div>
-    		<div class="col-xs-8">
-    			<h2 class="title-page">Profile info</h2>
-    		</div>
-    		<div class="col-xs-offset-1 col-xs-10">
-    			<hr class="second-hr">
-    		</div>
-  	</div>
+    <div class="row">
+        <div class="col-xs-2">
+          <a href="<?php echo base_url(); ?>index.php/dashboard"><span class="glyphicon glyphicon-home"></span></a>
+        </div>
+        <div class="col-xs-8">
+          <h2 class="title-page">Profile info</h2>
+        </div>
+        <div class="col-xs-offset-1 col-xs-10">
+          <hr class="second-hr">
+        </div>
+    </div>
   </div>
   
   <div class="container">
     <div class="row">
 
       <div class="col-xs-offset-2 col-xs-8">
-          <img src="<?php echo base_url(); ?>public/img/profile_image.jpg" class="img-rounded profile-picture" width="150px" height="150px" alt="Profile-picture">
+          <img src="<?php echo base_url(); ?>public/img/<?php echo $_SESSION['image']; ?>" class="img-rounded profile-picture" width="150px" height="150px" alt="Profile-picture">
           <div class="change-profile-ph">
             <span class="glyphicon glyphicon-picture"></span>
             <label class="browse">
@@ -50,37 +50,49 @@
             </label>
           </div>
       </div> <!-- END OF INFO IMAGE -->
-
+      <div class="col-xs-12">
+      <?if($this->session->flashdata('flashSuccess')):?>
+        <h3 class='text-center'> <?=$this->session->flashdata('flashSuccess')?> </h3>
+      <?endif?>
+      </div>
       <div class="col-xs-4">
         <h4 class="headers-input">Name*:</h4>
       </div>
-      <div class="col-xs-8 Inputs-profile-main">
-        <div class="input-group Inputs-profile-wrap">
-            <input type="text" class="form-control Inputs-profile" placeholder="Amanda Nielsen">
-            <span class="glyphicon glyphicon-edit"></span>
+      <form action="Personalsettings/update_button" method="POST" role="form">
+        <div class="col-xs-8 Inputs-profile-main">
+          <div class="input-group Inputs-profile-wrap">
+               
+              <input type="text" name="username" class="form-control Inputs-profile" value="<?php echo $_SESSION['username']; ?>" placeholder="">
+              <span class="glyphicon glyphicon-edit"></span>
+              
+          </div>
         </div>
-      </div>
-      
-      <div class="col-xs-4">
-        <h4 class="headers-input email">Email*:</h4>
-      </div>
-      <div class="col-xs-8 Inputs-profile-main">
-        <div class="input-group Inputs-profile-wrap">
-            <input type="text" class="form-control Inputs-profile" placeholder="amanda.nielsen@gmail.com">
-            <span class="glyphicon glyphicon-edit"></span>
+        
+        <div class="col-xs-4">
+          <h4 class="headers-input email">Email*:</h4>
         </div>
-      </div>
+        <div class="col-xs-8 Inputs-profile-main">
+          <div class="input-group Inputs-profile-wrap">
+              <input type="text" name="email" class="form-control Inputs-profile" value="<?php echo $_SESSION['email']; ?>"  placeholder="">
+              <span class="glyphicon glyphicon-edit"></span>
+          </div>
+        </div>
 
-      <div class="col-xs-4">
-        <h4 class="headers-input">Phone*:</h4>
-      </div>
-      <div class="col-xs-8 Inputs-profile-main">
-        <div class="input-group Inputs-profile-wrap">
-            <input type="text" class="form-control Inputs-profile" placeholder="00 45 52 77 99 78">
-            <span class="glyphicon glyphicon-edit"></span>
+        <div class="col-xs-4">
+          <h4 class="headers-input">Phone*:</h4>
         </div>
-      </div>
-      
+        <div class="col-xs-8 Inputs-profile-main">
+          <div class="input-group Inputs-profile-wrap">
+              <input type="text" name="mobile" class="form-control Inputs-profile" value="<?php echo $_SESSION['mobile']; ?>"  placeholder="">
+              <span class="glyphicon glyphicon-edit"></span>
+          </div>
+        </div>
+        <div class="col-xs-12">
+          <div class="input-group">
+            <button type="submit" style="margin:0 auto; position:relative; top:10px;" class="btn btn-primary btn-block button-submit">Save details</button>
+          </div>
+        </div>
+      </form>
       
     </div><!-- END OF ROW-->
   </div><!-- END OF CONTAINER -->

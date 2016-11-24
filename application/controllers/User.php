@@ -133,7 +133,7 @@ class User extends CI_Controller {
 		
 		if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] === true) {
 			
-			// remove session datas
+			// remove session data
 			foreach ($_SESSION as $key => $value) {
 				unset($_SESSION[$key]);
 			}
