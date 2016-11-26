@@ -61,10 +61,7 @@
       <form action="Personalsettings/update_button" method="POST" role="form">
         <div class="col-xs-8 Inputs-profile-main">
           <div class="input-group Inputs-profile-wrap">
-               
-              <input type="text" name="username" class="form-control Inputs-profile" value="<?php echo $_SESSION['username']; ?>" placeholder="">
-              <span class="glyphicon glyphicon-edit"></span>
-              
+              <input type="text" name="username" class="form-control Inputs-profile" value="<?php echo $_SESSION['username']; ?>">
           </div>
         </div>
         
@@ -73,8 +70,8 @@
         </div>
         <div class="col-xs-8 Inputs-profile-main">
           <div class="input-group Inputs-profile-wrap">
-              <input type="text" name="email" class="form-control Inputs-profile" value="<?php echo $_SESSION['email']; ?>"  placeholder="">
-              <span class="glyphicon glyphicon-edit"></span>
+              <input type="text" name="email" class="form-control Inputs-profile" value="<?php echo $_SESSION['email']; ?>">
+             
           </div>
         </div>
 
@@ -83,13 +80,12 @@
         </div>
         <div class="col-xs-8 Inputs-profile-main">
           <div class="input-group Inputs-profile-wrap">
-              <input type="text" name="mobile" class="form-control Inputs-profile" value="<?php echo $_SESSION['mobile']; ?>"  placeholder="">
-              <span class="glyphicon glyphicon-edit"></span>
+              <input type="text" name="mobile" class="form-control Inputs-profile" value="<?php echo $_SESSION['mobile']; ?>">
           </div>
         </div>
         <div class="col-xs-12">
           <div class="input-group">
-            <button type="submit" style="margin:0 auto; position:relative; top:10px;" class="btn btn-primary btn-block button-submit">Save details</button>
+            <button type="submit" class="btn btn-primary btn-block button-submit btn-personal">Save details</button>
           </div>
         </div>
       </form>
