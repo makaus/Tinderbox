@@ -35,13 +35,14 @@ class Map extends CI_controller {
 
 ####### SVG Not rendering correctly. will use .png for now!!!#######
 		// MarkersNE
-// TESTING
-$marker = array();
-			$marker['position'] = '55.382660, 10.344179';
-			$marker['draggable'] = true;
-			$marker['ondragend'] = 'alert(\'You just dropped me at: \' + event.latLng.lat() + \', \' + event.latLng.lng());';
 
-			$this->googlemaps->add_marker($marker);
+// For locating pins 
+// $marker = array();
+// 			$marker['position'] = '55.382660, 10.344179';
+// 			$marker['draggable'] = true;
+// 			$marker['ondragend'] = 'alert(\'You just dropped me at: \' + event.latLng.lat() + \', \' + event.latLng.lng());';
+
+// 			$this->googlemaps->add_marker($marker);
 
 			//Tinderbox 
 			$marker = array();
