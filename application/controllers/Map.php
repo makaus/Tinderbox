@@ -14,7 +14,16 @@ class Map extends CI_controller {
 			$config['class'] = 'map_wrap';
 			$config['disableDefaultUI'] = true; //Removes defult zoom options
 			$config['apiKey'] = 'AIzaSyAlAYGcLXj0Zob6yoTnU0iDcH9_mDf5CYo';
+			$config['styles'] = array(
+				  array("name"=>"Black Roads", "definition"=>array(
+				    array("featureType"=>"all", "stylers"=>array(array("saturation"=>"-90"))),
+				    array("featureType"=>"road.arterial", "elementType"=>"geometry", "stylers"=>array(array("hue"=>"#efefef")))
+				  ))
+				);
+			$config['stylesAsMapTypes'] = true;
+			$config['stylesAsMapTypesDefault'] = "Black Roads"; 
 			$this->googlemaps->initialize($config);
+			
 		// $disableDefaultUI = true;
 
 		// Tinderbox Map Overlay
