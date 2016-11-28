@@ -28,7 +28,9 @@ class Map extends CI_controller {
 			//Tinderbox 
 			$marker = array();
 			$marker['position'] = '55.380779, 10.345300';
-			$marker['infowindow_content'] = '<div class="marker-infowindow">Tinderbox</div>';
+			$marker['icon'] = base_url ('/public/img/tinderbox.png');
+			$marker['icon_scaledSize'] = '35, 40';	
+			$marker['infowindow_content'] = '<div class="marker-infowindow">Tinderbox festival</div>';
 			$this->googlemaps->add_marker($marker);
 
 			//Restroom  
