@@ -18,11 +18,11 @@
   <div class="row">
      <div class="language-container">
           <div class="col-xs-6 language language-eng">
-            <a class="img" href=""><img class="img-responsive pull-right" src="<?php echo base_url(); ?>public/img/e-flag.png" alt="english-flag"></a>
+            <a class="img" href="#0"><img class="img-responsive pull-right" src="<?php echo base_url(); ?>public/img/e-flag.png" alt="english-flag"></a>
             <span class="break-left"></span>
           </div>
           <div class="col-xs-6 language language-dk">
-            <a  class="img" href=""><img class="img-responsive pull-left" src="<?php echo base_url(); ?>public/img/d-flag.png" alt="danish-flag"></a>
+            <a  class="img" href="#0"><img class="img-responsive pull-left" src="<?php echo base_url(); ?>public/img/d-flag.png" alt="danish-flag"></a>
             <span class="break"></span>
           </div> <!-- End of Languages -->
       </div>
@@ -88,7 +88,7 @@
           <h6 class="text-center">Don't have an account?</h6>
         </div>
         <div class="col-xs-offset-1 col-xs-10">
-          <button type="submit"  class="btn btn-primary btn-block button-submit button-register">Register</button>
+          <a href="<?php echo base_url();?>index.php/register"><button type="submit"  class="btn btn-primary btn-block button-submit button-register">Register</button></a>
         </div>
       </div>
   </div> <!-- END OF THE CONTAINER -->

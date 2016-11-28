@@ -20,7 +20,7 @@
 					<div class="col-xs-2">
 						<div class="table">
 							<div class="cell">
-								<a href="dashboard"><img src="<?php echo base_url(); ?>public/img/home-button.png" alt="" class="img-responsive center-block"></a>
+								<a href="<?php echo base_url(); ?>index.php/dashboard"><img src="<?php echo base_url(); ?>public/img/home-button.png" alt="" class="img-responsive center-block"></a>
 							</div>
 						</div>
 					</div>

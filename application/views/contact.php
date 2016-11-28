@@ -27,7 +27,7 @@
   <div class="container schedule-title">
   	<div class="row">
     		<div class="col-xs-2">
-    			<a href="dashboard"><span class="glyphicon glyphicon-home"></span></a>
+    			<a href="<?php echo base_url(); ?>index.php/dashboard"><span class="glyphicon glyphicon-home"></span></a>
     		</div>
     		<div class="col-xs-8">
     			<h2 class="title-page">Info/Contact</h2>

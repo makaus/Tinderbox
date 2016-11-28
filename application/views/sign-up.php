@@ -93,7 +93,7 @@
             <h6 class="text-center no-account-title">Haven't Decided Yet?</h6>
           </div>
           <div class="col-xs-offset-1 col-xs-10">
-            <button type="submit" class="btn btn-primary btn-block button-submit button-more-info">MORE INFORMATION</button>
+            <a href="<?php echo base_url();?>index.php/contact"><button type="submit"  class="btn btn-primary btn-block button-submit button-register">more information</button></a>
           </div>
       </div> <!-- END OF THE ROW -->
   </div> <!-- END OF THE CONTAINER -->
