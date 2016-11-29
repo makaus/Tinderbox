@@ -7,13 +7,13 @@ class Notification_model extends CI_model
 	public function __construct()
 	{
 		$this->load->database();
-
-		// $this->session->userdata("user_teamID")
-		$result = $this->db->query('SELECT n.`datetime`, n.content, n.supervisorID, s.name, s.image
-			FROM notifications n, supervisor s
-			WHERE n.teamID = 12
-            GROUP BY n.NotificationID
-			ORDER BY n.`datetime` DESC');
+		$teamid = $_SESSION['teamid'];
+		$result = $this->db->query(sprintf('SELECT DISTINCT notifications.content, notifications.`datetime`, supervisor.name, supervisor.image
+                FROM notifications
+                JOIN supervisor ON notifications.SupervisorID = supervisor.SupervisorID
+                JOIN teamsupervisor ON supervisor.SupervisorID = teamsupervisor.supervisorid
+                WHERE notifications.TeamID = "%d"
+                ORDER BY notifications.`datetime` DESC', $teamid));
 
 		$this->notifications = $result->result();
 	}

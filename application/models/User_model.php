@@ -22,6 +22,7 @@ class User_model extends CI_Model {
 			'created_at' => date('Y-m-j H:i:s'),
 			'mobile' => $mobile,
 			'department' => $department,
+			'teamid' => $department,
 			'period' => $period,
 		);
 		return $this->db->insert('users', $data);
