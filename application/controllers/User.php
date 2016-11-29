@@ -108,7 +108,8 @@ class User extends CI_Controller {
 				$_SESSION['image']		  = (string)$user->image;
 				$_SESSION['email']		  = (string)$user->email;
 				$_SESSION['mobile']		  = (string)$user->mobile;		
-				$this->load->view('dashboard', $data);
+				
+				redirect('index.php/dashboard');
 				
 			} 
 			else 

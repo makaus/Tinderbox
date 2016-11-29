@@ -4,6 +4,9 @@ class Myteam extends CI_Controller {
 
     public function index()
     {
+        	if (!$_SESSION['logged_in'] === true) {
+        		redirect('/');
+        	}
     	// Getting the teamid from the session
     	$teamid = $this->session->userdata('teamid');
 

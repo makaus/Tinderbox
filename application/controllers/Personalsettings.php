@@ -4,6 +4,9 @@ class Personalsettings extends CI_Controller {
 
         public function index()
         {
+        	if (!$_SESSION['logged_in'] === true) {
+        		redirect('/');
+        	}
             $this->load->model('user_model');
             $this->load->view('personalsettings');
         }

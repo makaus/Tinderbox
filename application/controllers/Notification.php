@@ -4,6 +4,9 @@ class Notification extends CI_Controller {
 
         public function index()
         {
+        	if (!$_SESSION['logged_in'] === true) {
+        		redirect('/');
+        	}
         	$this->load->helper('date');
 			$this->load->model('notification_model');
 

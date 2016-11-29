@@ -3,6 +3,9 @@
 class Map extends CI_controller {
 
 	public function index() {
+        	if (!$_SESSION['logged_in'] === true) {
+        		redirect('/');
+        	}
 		//Google maps library
 		$this->load->library('googlemaps');
 
