@@ -53,16 +53,16 @@
 				if(is_array($r)) {
 					foreach ($r as $key => $value) { ?>
 						<div class="team-member col-xs-4">
-							<button class="button-title-modal" type="" data-toggle="modal" data-target="#team-modal">
+							<button class="button-title-modal" type="" data-toggle="modal" data-target="#team-modal-<?php echo $value->username ?>">
 							<img src="<?php echo base_url(); ?>public/img/<?php echo $value->image ?>" alt="Member" class="img-responsive center-block"></button>
-							<div class="modal fade" id="team-modal">
+							<div class="modal fade" id="team-modal-<?php echo $value->username ?>">
 								<div class="modal-dialog" role="document">
 									<div class="modal-content">
 									    <div class="modal-header">
 									        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
 									          <span aria-hidden="true">&times;</span>
 									        </button>
-									        <h4 class="modal-title">Lara Andersen</h4>
+									        <h4 class="modal-title"><?php echo $value->username ?></h4>
 									    </div>
 									    <div class="modal-body">
 									        <button type="button" class="btn center-block button-modal">Send a message</button>
