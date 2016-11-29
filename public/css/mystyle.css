@@ -3,15 +3,15 @@
 ===================================*/
 @font-face {
     font-family: Brown;
-    src: url('<?php echo base_url(); ?>public/fonts/brown-regular.otf');
+    src: url('http://gabrielbrumea.info/Tinderbox/public/fonts/brown-regular.otf');
 }
 @font-face {
 	font-family:EvelethRegular;
-	src: url('<?php echo base_url(); ?>public/fonts/Yellow Design Studio - Eveleth Clean Regular.otf');
+	src: url('http://gabrielbrumea.info/Tinderbox/public/fonts/Yellow Design Studio - Eveleth Clean Regular.otf');
 }
 @font-face {
 	font-family:EvelethThin;
-	src: url('<?php echo base_url(); ?>public/fonts/Yellow Design Studio - Eveleth Clean Thin.otf');
+	src: url('http://gabrielbrumea.info/Tinderbox/public/fonts/Yellow Design Studio - Eveleth Clean Thin.otf');
 }
 
 /************************    ****************************/
@@ -1369,6 +1369,7 @@ span.glyphicon.glyphicon-picture {
 	margin:0 auto;
 	position:relative;
 	top:10px;
+	left: 50%;
 }
 /* End of Personal settings */
 
