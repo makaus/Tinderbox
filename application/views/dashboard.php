@@ -59,7 +59,7 @@
 				</div>
 				<div class="col-xs-12">
 					<?php if (isset($_SESSION['username']) && $_SESSION['logged_in'] === true) : ?>
-						<button value="Logout" type="submit" class="btn btn-primary btn-block button-dashboard"><a href="<?= base_url('index.php/logout') ?>">Logout</a></button>
+						<button value="Logout" type="submit" class="btn btn-primary btn-block button-dashboard"><a id="dashboard-text" href="<?= base_url('/') ?>">Logout</a></button>
 					<?php endif; ?>
 				</div>
 				
