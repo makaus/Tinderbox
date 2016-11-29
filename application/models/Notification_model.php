@@ -15,6 +15,7 @@ class Notification_model extends CI_model
                 WHERE notifications.TeamID = "%d"
                 ORDER BY notifications.`datetime` DESC', $teamid));
 
+
 		$this->notifications = $result->result();
 	}
 
