@@ -66,7 +66,7 @@
           </div> <!-- End of Form -->
           <div class="col-xs-offset-1 col-xs-10">
             <div class="example-div">
-              <h3><span>Sign In with</span></h3>
+              <h3><span>Sign Up with</span></h3>
             </div>
           </div>
       </div> <!-- END OF THE ROW -->
@@ -88,7 +88,7 @@
           <h6 class="text-center">Don't have an account?</h6>
         </div>
         <div class="col-xs-offset-1 col-xs-10">
-          <a href="<?php echo base_url();?>index.php/register"><button type="submit"  class="btn btn-primary btn-block button-submit button-register">Register</button></a>
+          <a href="<?php echo base_url();?>index.php/register"><button type="submit"  class="btn btn-primary btn-block button-submit button-register">Normal Registration</button></a>
         </div>
       </div>
   </div> <!-- END OF THE CONTAINER -->

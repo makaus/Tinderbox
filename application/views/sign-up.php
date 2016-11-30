@@ -88,6 +88,9 @@
                 <button type="submit" class="btn btn-primary btn-block button-submit">Register</button>
             </form>
           </div> <!-- End of Form -->
+          <div class="col-xs-12">
+            <h6 class="text-center no-account-title"><a href="/Tinderbox" title=""><span class="glyphicon glyphicon-log-in" style="padding-right:5px;"></span>Go back to log in</a></h6>
+          </div> <!-- Go back to log in -->
           <!-- More Information -->
           <div class="col-xs-12">
             <h6 class="text-center no-account-title">Haven't Decided Yet?</h6>
