@@ -58,7 +58,7 @@
       <div class="col-xs-4">
         <h4 class="headers-input">Name*:</h4>
       </div>
-      <form action="Personalsettings/update_button" method="POST" role="form">
+      <form action="Personalsettings/update" method="POST" role="form">
         <div class="col-xs-8 Inputs-profile-main">
           <div class="input-group Inputs-profile-wrap">
               <input type="text" name="username" class="form-control Inputs-profile" value="<?php echo $_SESSION['username']; ?>">
@@ -74,7 +74,6 @@
              
           </div>
         </div>
-
         <div class="col-xs-4">
           <h4 class="headers-input">Phone*:</h4>
         </div>
