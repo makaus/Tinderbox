@@ -24,25 +24,25 @@ class Personalsettings extends CI_Controller {
             // Validate
             if (empty($data['username']) || empty($data['email']) || empty($data['mobile'])) {
                 $this->session->set_flashdata('flashSuccess', 'One or more fields are empty');
-                redirect('personalsettings');
+                redirect('index.php/personalsettings');
                 return false;
             }
 
             if (!preg_match('/^[a-zA-Z0-9_-]{3,20}$/', $data['username'])) {
                 $this->session->set_flashdata('flashSuccess', 'Use a valid name');
-                redirect('personalsettings');
+                redirect('index.php/personalsettings');
                 return false;
             }
 
             if (!filter_var($data['email'], FILTER_VALIDATE_EMAIL)) {
                 $this->session->set_flashdata('flashSuccess', 'Use a valid email');
-                redirect('personalsettings');
+                redirect('index.php/personalsettings');
                 return false;
             }
 
             if (!preg_match('/^\d+$/', $data['mobile'])) {
                 $this->session->set_flashdata('flashSuccess', 'Use a valid phone number');
-                redirect('personalsettings');
+                redirect('index.php/personalsettings');
                 return false;
             }
 
@@ -64,7 +64,7 @@ class Personalsettings extends CI_Controller {
 					$_SESSION['email']		  = (string)$data['email'];
 					$_SESSION['mobile']		  = (string)$data['mobile'];
 					$_SESSION['username']     = (string)$data['username'];
-					redirect('personalsettings');
+					redirect('index.php/personalsettings');
 				}
 
         }
