@@ -41,6 +41,7 @@ class Personalsettings extends CI_Controller {
             }
 
             if (!preg_match('/^\d+$/', $data['mobile'])) {
+                $this->session->set_flashdata('flashSuccess', 'Use a valid phone number');
                 redirect('personalsettings');
                 return false;
             }
