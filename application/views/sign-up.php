@@ -89,7 +89,7 @@
             </form>
           </div> <!-- End of Form -->
           <div class="col-xs-12">
-            <h6 class="text-center no-account-title"><a href="/Tinderbox" title=""><span class="glyphicon glyphicon-log-in" style="padding-right:5px;"></span>Go back to log in</a></h6>
+            <h6 class="text-center no-account-title"><a href="/Tinderbox" title=""><span class="glyphicon glyphicon-log-in" style="padding-right:5px;"></span>Go back to login page</a></h6>
           </div> <!-- Go back to log in -->
           <!-- More Information -->
           <div class="col-xs-12">
