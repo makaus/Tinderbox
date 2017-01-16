@@ -12,7 +12,7 @@
 	<div class="background">
     	<img src="<?php echo base_url(); ?>public/img/background-schedule.png" alt="background-settings">
   	</div>
-
+    <!-- Just for testing -->
 	 <div class="container-fluid ">
 	      <div class="row">
 	     	<div class="col-xs-12 hr-container">
